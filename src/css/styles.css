@@ -1,18 +1,35 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import './header.css';
+@import './hero.css';
+@import './aboutMe.css';
+@import './benefis.css';
+@import './project.css';
+@import './faq.css';
+@import './covers.css';
+@import './reviews.css';
+@import './footer.css';
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+:root {
+  /* Шрифты: */
+font-family: 'Inter', sans-serif;
+    /* hover: */
+--light-crimson: #ED3B44;
+/* color-button: */
+--dark-crimson:#E0373F;
+/* background */
+--dark: #1C1D20;
+/* Cards: */
+--dark-gray: #242527;
+/* Array/logo: */
+--gray: #3B3B3B;
+/* For links and etc */
+--white: #FAFAFA;
+/* Success: */
+--green: #3CBC81;
+}
+
+body {
+  background-color: green;
+font-family: 'Inter', sans-serif;
+font-weight: 500;
+}
