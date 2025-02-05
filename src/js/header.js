@@ -1,3 +1,4 @@
-export const messageFunctionHead = function(){
+const messageFunctionHead = function(){
     console.log("this is header");
 };
+messageFunctionHead()
