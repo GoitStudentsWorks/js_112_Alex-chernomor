@@ -35,7 +35,7 @@ const createBenefitEl = obj => {
         </svg>
         <h3 class="benefits-subtitle">${obj.title}</h3>
         <p class="benefits-desc">
-          ${obj.deascription}
+          ${obj.description}
         </p>
       </li>
     `;
@@ -44,7 +44,8 @@ const createBenefitEl = obj => {
 const createBenefitsTemplate = arr =>
   arr.map(el => createBenefitEl(el)).join('');
 
-const addBenefitsTemplate = template =>
-  benefitsList.insertAdjacentHTML('beforeend', template);
+const addBenefitsTemplate = template => {
+  return benefitsList.insertAdjacentHTML('beforeend', template);
+};
 
-addBenefitsTemplate(createBenefitsTemplate(benefitsArr));
+console.log(addBenefitsTemplate(createBenefitsTemplate(benefitsArr)));
