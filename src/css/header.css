@@ -1,6 +1,6 @@
 header{
     display: flex;
-    background-color: red;
+    background: none
     /* justify-content: center; */
 }
 
@@ -17,6 +17,12 @@ header{
     justify-content: flex-start;
     flex-direction: row;
     gap: 487px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #fafafa;
 }
 
 .menu-div{
@@ -25,7 +31,15 @@ text-align: center;
 }
 
 .img-logo{
-    border-radius: 30px;
+    margin-right: 8px;
+    border-radius: 18px;
+    width: 80px;
+    height: 80px;
+}
+
+.logo-name{
+    margin: 0;
+    color: white;
 }
 
 .header-div{
@@ -40,15 +54,17 @@ text-align: center;
 .ankors-menu{
     padding: 0;
     margin: 0;
+    width: 67px;
+    height: 91px;
     list-style: none;
 }
 
-/* .is-hidden{
+.is-hidden{
     opacity: 0;
     pointer-events: none;
     -webkit-transition: all 250ms linear 250ms;
     transition: all 250ms linear 250ms;
-  } */
+  }
 
  .order-button{
     border-radius: 60px;
