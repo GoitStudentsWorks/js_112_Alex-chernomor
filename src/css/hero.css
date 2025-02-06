@@ -1,5 +1,5 @@
 .hero {
-    background-image: url(../img/Hero\ \(3\).png);
+    background-image: url(../img/imgJPEG/heroImg/orange.png);
     Width:
         1440px;
     Height:
@@ -29,6 +29,7 @@
     align-items: center;
     text-transform: uppercase;
     font-weight: 500;
+    color: #FAFAFA;
 }
 
 .list-link {
@@ -43,13 +44,13 @@
 
 .link-wrap {
     Width: 55px;
-    Height: 55px;
+    Height: 45px;
     border: solid 1px;
     border-color: aliceblue;
     border-radius: 50%;
     margin-right: 8px;
     text-align: center;
-    padding: 16px 8px 8px 8px;
+    padding: 17px 8px 6px 8px;
 
 
 }
@@ -71,18 +72,16 @@
 .second-wrap {
     padding-top: 25px;
 
-
-
 }
 
 .link-big {
     margin-left: 34px;
     border: solid 1px;
     Width: 223px;
-    Height: 55px;
+    Height: 30px;
     border-radius:
         60px;
-    Padding: 18px 24px 18px 24px;
+    Padding: 18px 14px 14px 13px;
     text-align: center;
     margin: 0 auto;
     font-weight: 500;
@@ -104,7 +103,6 @@
         Width: 768px;
         Height: 1024px;
         padding: 20px;
-        /* Добавляем отступы */
     }
 
     .main-title {
@@ -114,17 +112,13 @@
 
     .list-link {
         bottom: 20px;
-        /* Поднимаем ссылки выше */
         right: 20px;
-        /* Даем им немного отступа */
         gap: 5px;
-        /* Уменьшаем расстояние между ссылками */
 
     }
 
     .link-wrap {
-        padding: 18px 20px 18px 20px;
-        /* Делаем кнопки компактнее */
+        padding: 15px 11px 8px 10px;
         font-size: 14px;
         font-size: 19px;
     }
@@ -132,22 +126,13 @@
     .second-wrap {
         width: 223px;
         height: 40px;
-
+        padding: 15px 15px 18px 15px;
     }
 
-    .title-me {
-        Width:
-            1084px;
-        Height:
-            270px;
-        font-size: 90px;
-        line-height: 90px;
-        align-items: center;
-        text-transform: uppercase;
-        font-weight: 500;
+    .link-big {
+        padding: 16px 16px 18px 10px;
 
     }
-
 
 
 
@@ -187,10 +172,10 @@
     }
 
     .link-wrap {
-        padding: 6px 7px 6px 7px;
+        padding: 6px 7px 2px 5px;
         font-size: 10px;
-        width: 20px;
-        height: 20px;
+        width: 55px;
+        height: 30px;
         text-align: center;
         font-weight: 500;
 
@@ -199,11 +184,11 @@
 
     .link-big {
         border: solid 1px;
-        width: 178px;
-        Height: 37px;
+        width: 188px;
+        Height: 30px;
         border-radius:
             60px;
-        Padding: 10px 12px 10px 12px;
+        Padding: 10px 12px 8px 7px;
         Gap:
             10px;
         text-align: center;
@@ -214,4 +199,50 @@
         color: #FAFAFA
     }
 
+
+
+}
+
+
+@media (max-width: 375px) {
+    .hero {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        overflow: hidden;
+
+    }
+
+    .main-title {
+        width: 243px;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.3;
+
+    }
+
+    .list-link {
+        right: 5px;
+        width: 320px;
+        margin-top: 20px;
+        gap: 2px;
+
+    }
+
+    .link-wrap {
+        font-size: 8px;
+        width: 120px;
+        height: 30px;
+
+    }
+
+    .link-big {
+        border: solid 1px;
+        width: 100%;
+        height: 30px;
+        border-radius: 60px;
+        padding: 6px 6px 2px 6px;
+
+    }
 }
