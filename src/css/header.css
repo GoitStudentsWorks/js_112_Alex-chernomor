@@ -1,9 +1,17 @@
 header{
     /* position: absolute; */
     display: flex;
-    background: none
-    /* justify-content: center; */
+    background: none;
+    width: 100%;
+    justify-content: center;
 }
+
+
+/* @media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+  } */
 
 .logo-container{
     display: flex;
@@ -50,7 +58,7 @@ text-align: center;
 
 .header-div{
     margin-top: 30px;
-    width: 1375px;
+    width: 1440px;
     height: 80px;
     display: flex;
     justify-content: space-between;
@@ -79,14 +87,11 @@ text-align: center;
 
 
 .is-hidden{
-    /* display: none; */
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
     pointer-events: none;   
     visibility: hidden;
-    /* -webkit-transition: all 250ms linear 250ms;
-    transition: all 250ms linear 250ms; */
   }
 
  .order-button{
