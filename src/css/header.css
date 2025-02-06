@@ -1,18 +1,18 @@
 header{
+    /* position: absolute; */
     display: flex;
     background: none
     /* justify-content: center; */
 }
 
-.logo{
+.logo-container{
     display: flex;
 }
 .menu-button{
     background: none;
     border: none;
-    padding: 10px;
-    width: 60px;
-    height: 39px;   
+    padding: 0;
+    margin-top: 10px;
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: row;
@@ -25,7 +25,13 @@ header{
     color: #fafafa;
 }
 
+
+.menu-button:hover, .menu-button:focus{
+    color: #ed3b44;
+}
+
 .menu-div{
+height: 10px;
 flex-direction: column;
 text-align: center;
 }
@@ -39,10 +45,11 @@ text-align: center;
 
 .logo-name{
     margin: 0;
-    color: white;
+    color: #FAFAFA;
 }
 
 .header-div{
+    margin-top: 30px;
     width: 1375px;
     height: 80px;
     display: flex;
@@ -52,28 +59,49 @@ text-align: center;
 }
 
 .ankors-menu{
+    margin-top: 16px;
+    white-space: nowrap;
     padding: 0;
-    margin: 0;
-    width: 67px;
-    height: 91px;
+    width: auto;
     list-style: none;
+    color: #FAFAFA;;
 }
 
+
+.acnkorLink{
+    margin-top: 5px;
+}
+
+.acnkorLink:hover, .acnkorLink:focus{
+    color: #ed3b44;
+    cursor: pointer
+}
+
+
 .is-hidden{
+    /* display: none; */
     opacity: 0;
     pointer-events: none;
-    -webkit-transition: all 250ms linear 250ms;
-    transition: all 250ms linear 250ms;
+    overflow: hidden;
+    pointer-events: none;   
+    visibility: hidden;
+    /* -webkit-transition: all 250ms linear 250ms;
+    transition: all 250ms linear 250ms; */
   }
 
  .order-button{
+    white-space: nowrap;
+    background: none;
+    border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    padding: 18px 24px;
-    width: 163px;
+    padding: 18px 36px;
+    width: 187px;
     height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fafafa;
  } 
+
+ .order-button:hover, .order-button:focus{
+    background: #ed3b44;
+ }

@@ -34,3 +34,18 @@ body {
 font-family: 'Inter', sans-serif;
 font-weight: 500;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+}
