@@ -32,9 +32,11 @@ const benefitsList = document.querySelector('.benefits-list');
 const createBenefitEl = ({ iconId, title, description }) => {
   return `
     <li class="benefits-elements">
-        <svg class="benefits-icon" width="24" height="24">
-          <use href="${iconPath}#${iconId}"></use>
-        </svg>
+        <div class="benefits-wrapper">
+          <svg class="benefits-icon" width="24" height="24">
+            <use href="${iconPath}#${iconId}"></use>
+          </svg>
+        </div>
         <h3 class="benefits-subtitle">${title}</h3>
         <p class="benefits-desc">
           ${description}
