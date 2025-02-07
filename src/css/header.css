@@ -107,11 +107,12 @@ text-align: center;
     height: 55px;
     font-weight: 500;
     font-size: 16px;
-    color: #fafafa;
+    color: #FAFAFA;
+    background-color: #ED3B44;
  } 
 
  .order-button:hover, .order-button:focus{
-    background: #ed3b44;
+    background: #E0373F;
  }
 
  /* mobile version */

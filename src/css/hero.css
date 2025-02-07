@@ -66,12 +66,15 @@
     font-size: 16px;
     text-decoration: none;
     color: aliceblue;
+
 }
 
-
-.second-wrap {
-    padding-top: 25px;
-
+.link-big:hover {
+border: 2px gray;
+transition: 0.3s ease-in-out;
+opacity: 0.5;
+border-color: transparent rgba(255, 255, 255, 03);
+box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
 }
 
 .link-big {
