@@ -1,3 +1,4 @@
+
 const benefitsArr = [
   {
     imgSVG: '../img/imgSVG/benefitsSVG/userSVG.svg',
