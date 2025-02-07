@@ -1,25 +1,26 @@
+import iconPath from '/icons.svg';
 
-const benefitsArr = [
+const benefitsData = [
   {
-    imgSVG: '../img/imgSVG/benefitsSVG/userSVG.svg',
+    iconId: 'icon-user',
     title: 'Expertise',
     description:
       'As a highly experienced developer, I have deep knowledge of programming and website development.',
   },
   {
-    imgSVG: '../img/imgSVG/benefitsSVG/dialogSVG.svg',
+    iconId: 'icon-dialog',
     title: 'Communication',
     description:
       'Understanding your needs and wants is my priority and I am always open     to discussions and corrections.',
   },
   {
-    imgSVG: '../img/imgSVG/benefitsSVG/penSVG.svg',
+    iconId: 'icon-pen',
     title: 'Art',
     description:
       'Thanks to my creative nature, I am ready to accept challenges and help you bring your ideas to life.',
   },
   {
-    imgSVG: '../img/imgSVG/benefitsSVG/hourglassSVG.svg',
+    iconId: 'icon-hourglass',
     title: 'Urgent execution',
     description:
       'I understand how important time is to you. Ready to work quickly and efficiently, without reducing the quality of work.',
@@ -28,25 +29,24 @@ const benefitsArr = [
 
 const benefitsList = document.querySelector('.benefits-list');
 
-const createBenefitEl = obj => {
+const createBenefitEl = ({ iconId, title, description }) => {
   return `
     <li class="benefits-elements">
         <svg class="benefits-icon" width="24" height="24">
-          <use href="${obj.imgSVG}"></use>
+          <use href="${iconPath}#${iconId}"></use>
         </svg>
-        <h3 class="benefits-subtitle">${obj.title}</h3>
+        <h3 class="benefits-subtitle">${title}</h3>
         <p class="benefits-desc">
-          ${obj.description}
+          ${description}
         </p>
       </li>
     `;
 };
 
-const createBenefitsTemplate = arr =>
-  arr.map(el => createBenefitEl(el)).join('');
+const createBenefitsTemplate = arr => arr.map(createBenefitEl).join('');
 
-const addBenefitsTemplate = template => {
-  return benefitsList.insertAdjacentHTML('beforeend', template);
-};
-
-console.log(addBenefitsTemplate(createBenefitsTemplate(benefitsArr)));
+export const addBenefitsTemplate = () =>
+  benefitsList.insertAdjacentHTML(
+    'beforeend',
+    createBenefitsTemplate(benefitsData)
+  );
