@@ -1,18 +1,29 @@
 <header>
     
-        <div class="header-div">
-            <div class="logo-container">
-               
-                <p class="logo-name">jefferson*</p>
-            </div>
+        <div class="header-div .container">
 
-            <div class="menu-div">
-                <button class="menu-button">Menu</button>
+            <!-- <nav class="flex"> -->
+                <a class="logo flex" href="#">
+                    <p class="logo-name">jefferson*</p>
+                </a>
+    
+                <button type="button" class="menu-burger-button" >
+                    <svg width="40" height="40">
+                        <use class="closeMenuSvgIcon is-hidden" href="../img/imgSVG/sprite.svg#closeIcon"></use>
+                        <use class="burgerSvgIcon" href="../img/imgSVG/sprite.svg#burgerIcon"></use>
+                    </svg>
+                  </button>
+               <div class="burger-menu-container  flex">
+                <div class="menu-div">
+                    <button class="menu-button">Menu</button>    
+                    <ul class="ankors-menu is-hidden"></ul>
+                </div>
+                
+                </p>
+                <button class="order-button">Order the project</button>
+               </div>
+            <!-- </nav> -->
 
-                <ul class="ankors-menu is-hidden"></ul>
-            </div>
-
-            <button class="order-button">Order the project</button>
         </div>
    
 </header>

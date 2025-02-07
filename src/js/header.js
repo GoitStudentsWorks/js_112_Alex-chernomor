@@ -75,4 +75,3 @@ const onClickBurgerMenu = (e) =>{
 
 menuContainer.addEventListener('click', onclickMenuBtn);
 burgerMenuBtn.addEventListener('click',onClickBurgerMenu);
-
