@@ -1,9 +1,7 @@
 .hero {
     background-image: url(../img/imgJPEG/heroImg/orange.png);
-    Width:
-        1440px;
-    Height:
-        900px;
+    width: 1440px;
+    height: 900px;
     position: relative;
     padding: 0;
     display: flex;
@@ -14,10 +12,10 @@
 
 
 .main-title {
-    Width:
-        1084px;
-    Height:
-        270px;
+    width:
+    1084px;
+    height:
+    270px;
     font-size: 90px;
     line-height: 90px;
     align-items: center;
@@ -27,7 +25,8 @@
 }
 
 .list-link {
-    margin-right: 50px;
+    margin-right: 32px;
+    margin-bottom: 32px;
     position: absolute;
     display: flex;
     list-style: none;
@@ -37,27 +36,23 @@
 
 
 .link-wrap {
-    Width: 55px;
-    Height: 45px;
+    width: 55px;
+    height: 45px;
     border: solid 1px;
     border-color: aliceblue;
     border-radius: 50%;
     margin-right: 8px;
     text-align: center;
     padding: 17px 8px 1px 8px;
-
-
 }
 
 .link-wrap a {
-    Width:
-        55px;
-    Height:
-        55px;
+    width: 55px;
+    height: 55px;
     text-align: center;
     margin: 0 auto;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 17px;
     text-decoration: none;
     color: aliceblue;
 
@@ -72,13 +67,11 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
 }
 
 .link-big {
-    margin-left: 34px;
     border: solid 1px;
-    Width: 223px;
-    Height: 30px;
-    border-radius:
-        60px;
-    Padding: 18px 14px 14px 13px;
+    width: 223px;
+    height: 30px;
+    border-radius: 60px;
+    padding: 18px 14px 14px 13px;
     text-align: center;
     margin: 0 auto;
     font-weight: 500;
@@ -94,24 +87,22 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
 @media (max-width: 1024px) {
 
     .hero {
-        Width: 768px;
-        Height: 1024px;
+        width: 768px;
+        height: 1024px;
         padding: 20px;
     }
 
     .main-title {
-        Width: 632px;
-        Height: 450px;
+        width: 632px;
+        height: 450px;
     }
 
     .list-link {
-        bottom: 20px;
-        right: 20px;
         gap: 5px;
+        margin-right: 32px;
+        margin-bottom: 32px;
 
     }
-
-
     .second-wrap {
         width: 223px;
         height: 40px;
@@ -123,10 +114,9 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
 
 @media (max-width: 767px) {
     .hero {
-        Width: 375px;
-        Height: 812px;
+        width: 375px;
+        height: 812px;
         padding: 15px;
-        /* Добавляем небольшие отступы */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -135,22 +125,21 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
     }
 
     .main-title {
-        Width: 343px;
+        width: 343px;
+        height: 450px;
         font-weight: 500;
-        Top: 281px;
-        Left: 16px;
-        font-size: 50px;
-        line-height: 1.3;
+        top: 281px;
+        left: 16px;
+        font-size: 90px;
+        line-height: 90px;
+        margin-left: 32px;
     }
 
     .list-link {
-        right: 5px;
-        width: 350px;
-        height: 20px;
-        margin-top: 20px;
+        font-size: 16px;
         display: flex;
         align-items: center;
-        gap: 2px;
+    
     }
 
     .link-wrap {
@@ -166,10 +155,9 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
 
     .link-big {
         border: solid 1px;
-        width: 188px;
+        width: 225px;
         Height: 30px;
-        border-radius:
-            60px;
+        border-radius: 60px;
         Padding: 8px 12px 1px 4px ;
         text-align: center;
         margin: 0 auto;
@@ -186,7 +174,8 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
 
 @media (max-width: 375px) {
     .hero {
-        width: 100%;
+        width: 400px;
+        height: 812px;
         flex-direction: column;
         align-items: center;
         padding: 15px;
@@ -195,35 +184,49 @@ box-shadow: 0 0 10px rgba (255, 255, 255, 0.3);
     }
 
     .main-title {
-        width: 243px;
+        width: 343px;
+        height: 250px;
         font-weight: 500;
-        font-size: 40px;
-        line-height: 1.3;
+        font-size: 50px;
+        line-height: 50px;
+        margin-left: 16px;
 
     }
 
     .list-link {
-        right: 5px;
-        width: 320px;
-        margin-top: 20px;
-        gap: 2px;
-
+        width: 388px;
+        height: 37px;
+        margin-bottom: 32px;
     }
 
     .link-wrap {
-        font-size: 8px;
-        width: 120px;
+        font-size: 14px;
+        width: 37px;
         height: 30px;
-
+        margin-right: 4px;
+      
+       
     }
 
     .link-big {
         border: solid 1px;
-        width: 100%;
-        height: 30px;
+        width: 200px;
+        font-size: 14px;
         border-radius: 60px;
-        padding: 6px 6px 2px 6px;
-         overflow: hidden;
+        
     }
   
 }
+
+@media (min-width: 320px ) and (max-width: 375px) {
+.hero {
+width: 100%;
+
+}
+
+.list-link {
+    width:100%
+}
+
+}
+    
