@@ -10,11 +10,7 @@ header{
 .logo-container{
     display: flex;
 }
-<<<<<<< Updated upstream
 .menu-button{    
-=======
-.menu-button{
->>>>>>> Stashed changes
     background: none;
     border: none;
     padding: 0;
@@ -49,21 +45,12 @@ text-align: center;
     color: #FAFAFA;
 }
 .header-div{
-<<<<<<< Updated upstream
     padding-top: 32px;
-=======
-    margin-top: 32px;
->>>>>>> Stashed changes
     width: 1376px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-<<<<<<< Updated upstream
-    /* margin-right: 43px; */
-=======
-    margin-right: 43px;
->>>>>>> Stashed changes
 }
 .ankors-menu{
     margin-top: 16px;
@@ -116,7 +103,6 @@ text-align: center;
     
  }
 
-<<<<<<< Updated upstream
  .logo-container:hover{
     cursor:default;
  }
@@ -157,26 +143,12 @@ text-align: center;
     width: 375px;
     height: 80px;
     display: flex;
-=======
-
-
- /* mobile version */
- @media(min-width: 375px) {
-
-.header-div {
-    margin-top: 32px;
-    width: 343px;
-    height: 80px;
-    display: flex;
-    /* justify-content: space-between; */
->>>>>>> Stashed changes
     flex-direction: row;
     margin-right: 16px;
     margin-left: 16px;
 }
 
 .burger-whipe {
-<<<<<<< Updated upstream
     z-index: 15;
     display: block;
     cursor: pointer;
@@ -240,49 +212,11 @@ text-align: center;
     .burger-whipe {
         display: none;
     }
-=======
-    display: block;
-    cursor: pointer;
-}
-.menu-button{
-    display: none;
-}
-
-.ankors-menu{
-    /* display: flex; */
-}
-       
-.burger-menu-container{
-    /* display: none; */
-
-}
-
-.burger-menu-container{
-    /* position: absolute; */
-    /* display: none; */
-    /* background-color: red; */
-      top: 100%;
-      left: 0;
-      width: 100%;
-      z-index: 999;
-
-      padding: 60px;
-      text-align: center;
-}
-
- }
-
- @media(min-width: 768px) {
-    .burger-whipe {
-        display: none;
-    }
->>>>>>> Stashed changes
     .header-div{
         width: 768px;;
     }
     .burger-menu-container{
         display: flex;
-<<<<<<< Updated upstream
     }
     .header-div {
         display: flex;
@@ -292,40 +226,14 @@ text-align: center;
       .burger-menu-container {
         padding: 0;
         margin: 0;      
-=======
-        /* justify-content: space-between; */
-    }
-    .header-div {
-        /* background-color: blue; */
-        display: flex;
-        justify-content: center; 
-        /* align-items: center; */
-        
-      }
-    
-      .burger-menu-container {
-        /* display: flex; */
-        padding: 0;
-        margin: 0;
-    /* background-color: red; */
-       
-      
->>>>>>> Stashed changes
         position: relative;
         width: 100%; 
       }
     
       .menu-div {
         display: flex;
-<<<<<<< Updated upstream
         align-items: center;
         width: 100%;
-=======
-        /* justify-content: center; */
-        align-items: center;
-        width: 100%;
-        /* height: 100%; */
->>>>>>> Stashed changes
       }
     
      }
@@ -333,19 +241,9 @@ text-align: center;
      @media(min-width: 1440px) {
       
         .header-div{
-<<<<<<< Updated upstream
             width: 1440px;;
         }
         
 
      
-=======
-            width: 1140px;;
-        }
-        
-
-        .menu-div{
-            /* margin-right: 500px; */
-              }
->>>>>>> Stashed changes
      }
