@@ -1,8 +1,21 @@
+<<<<<<< Updated upstream
 .container {
     max-width: 375px;
     min-width: 320px;
     margin: 0 auto;
     padding: 0 15px;
+=======
+/* .container {
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+>>>>>>> Stashed changes
   }
   @media only screen and (min-width: 768px) {
     .container {
@@ -10,8 +23,12 @@
       padding: 0 32px;
     }
   }
+<<<<<<< Updated upstream
   @media only screen and (min-width: 1440px) {
     .container {
       max-width: 1440px;
     }
   }
+=======
+} */
+>>>>>>> Stashed changes
