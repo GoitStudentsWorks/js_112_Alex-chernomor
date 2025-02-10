@@ -50,22 +50,24 @@
   }
 }
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1158px) {
+@media  screen and (min-width: 858px) {
   .container {
     
     max-width: 1200px;
   }
   .container-into-project{
     display: flex;
-   
+    
     /* flex-wrap: wrap; */
     flex-direction: row;
 
-    width: 1376;
+    width: 1376px;
     height: 625;
     border-radius: 24px;
   }
   .project-img{
     margin-left: 37px;
   }
+
+  
 }
