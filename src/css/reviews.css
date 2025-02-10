@@ -1,0 +1,140 @@
+
+/* Mobile First */
+.reviews-section {
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.reviews-section h2 {
+    font-weight: 600;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: rgba(250, 250, 250, 0.4);
+        text-align: start;
+        margin: 0;
+        padding-bottom: 32px;
+}
+
+.swiper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+
+.swiper-wrapper {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    display: flex;
+        transition: transform 0.3s ease;
+        /* Плавное переключение слайдов */
+        will-change: transform;
+}
+
+.swiper-slide {
+border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 20px;
+    padding: 32px 24px;
+        min-width: 295px;
+        margin: 0 auto;
+         flex: 0 0 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
+}
+
+.review-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 32px;
+    
+}
+
+.review-author {
+    font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: aliceblue;
+        margin: 0;
+}
+
+.review-text {
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: -0.02em;
+        color: rgba(250, 250, 250, 0.6);
+        margin-top: 8px;
+}
+
+.button_pointer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    border: 1px solid rgba(250, 250, 250, 0.5);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+    width: 52px;
+    height: 52px;
+    
+}
+
+
+
+
+/* Планшеты (от 768px) */
+@media (min-width: 768px) {
+    .swiper {
+            width: 100%;
+            max-width: 704px;
+            overflow: hidden;
+        }
+    
+        .swiper-wrapper {
+            display: flex;
+        }
+    
+        .swiper-slide {
+        flex: 0 0 calc(50% - 8px) !important;
+         max-width: calc(50% - 8px) !important;
+      }
+}
+
+/* Десктопы (от 1440px) */
+@media (min-width: 1440px) {
+    .swiper {
+        width: 100%;
+        max-width: 1376px;
+        overflow: hidden;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+    }
+
+    .swiper-slide {
+        flex: 0 0 calc(25% - 8px) !important;
+        max-width: calc(25% - 8px) !important;
+      
+    }
+}
+
