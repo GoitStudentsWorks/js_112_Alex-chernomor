@@ -1,5 +1,5 @@
 import './js/aboutMe';
-import { addBenefitsTemplate } from './js/benefits';
+import './js/benefits';
 import './js/covers';
 import './js/faq';
 import './js/footer';
@@ -11,4 +11,5 @@ import './js/reviews';
 /**
  * This function is for rendering benefits on the page
  */
-addBenefitsTemplate();
+// addBenefitsTemplate();
+// import { addBenefitsTemplate } from './js/benefits';
