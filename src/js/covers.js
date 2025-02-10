@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
       element.classList.add('visible');
     }, delay);
   }
-  // Функція для додавання зображень до рядка
+  // Функція для додавання зображень в рядок
   function addImagesToRow(row, images, isOrdered) {
     let usedImages = [];
 
