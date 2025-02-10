@@ -1,4 +1,4 @@
-import iconPath from '/icons.svg';
+import iconPath from '../img/imgSVG/sprite.svg';
 
 const benefitsData = [
   {
