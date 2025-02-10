@@ -1,3 +1,4 @@
+
 const links = [
     { url: "https://www.instagram.com/goitclub/", name: "IG" },
     { url: "https://www.facebook.com/goITclub/", name: "FB" },
@@ -15,3 +16,4 @@ return links.map(link => `
 }
 listLink.innerHTML = createMarkUp(links);
   
+
