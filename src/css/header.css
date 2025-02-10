@@ -45,12 +45,21 @@ text-align: center;
     color: #FAFAFA;
 }
 .header-div{
-    padding-top: 32px;
+
+    margin-top: 32px;
+
+/*     padding-top: 32px; */
+
     width: 1376px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+
+/*     margin-right: 43px; */
+ 
+  
+
 }
 .ankors-menu{
     margin-top: 16px;
@@ -85,11 +94,40 @@ text-align: center;
     font-weight: 500;
     font-size: 16px;
     color: #FAFAFA;
+
     background-color: none;
  }
  .order-button:hover, .order-button:focus{
     background: #E0373F;
  }
+
+
+
+/*  @media(max-width: 375px) {
+
+.order-button {
+  display: none;
+
+}
+
+.header-div {
+    margin-top: 32px;
+    width: 343px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 16px;
+    margin-left: 16px;
+
+
+}
+
+.menu-button {
+    display: none;
+}
+
+ } */
 
  .menu-burger-button{
     padding: 0;
