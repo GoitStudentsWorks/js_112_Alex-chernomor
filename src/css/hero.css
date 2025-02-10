@@ -129,6 +129,7 @@
             list-style: none;
             bottom: 0;
             margin-right: 32px;
+            margin-bottom: 32px;
         }
     
         .link-wrap:not(:last-child) {
@@ -171,7 +172,7 @@
 @media (min-width: 375px) and (max-width: 767px) {
   
         .hero-container {
-            width: 400px;
+            width: 405px;
         }
     
         .title-container {
