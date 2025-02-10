@@ -14,8 +14,6 @@ import 'swiper/css/bundle';
 //   },
 // });
 
-
-
 const swiper = new Swiper('.swiper', {
           // Optional parameters
           direction: 'horizontal',
