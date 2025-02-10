@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const coversImages = [
-    { src: '../img/imgJPEG/coversImg/coversImg1.jpg', alt: 'PowerPulse' },
-    { src: '../img/imgJPEG/coversImg/coversImg2.jpg', alt: 'MIMINO' },
+    { src: './img/imgJPEG/coversImg/coversImg1.jpg', alt: 'PowerPulse' },
+    { src: './img/imgJPEG/coversImg/coversImg2.jpg', alt: 'MIMINO' },
     { src: '../img/imgJPEG/coversImg/coversImg3.jpg', alt: 'Ukrainian Art' },
     { src: '../img/imgJPEG/coversImg/coversImg4.jpg', alt: 'GREEN.HARVEST' },
     { src: '../img/imgJPEG/coversImg/coversImg5.jpg', alt: 'WALLET' },
