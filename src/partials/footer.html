@@ -1,6 +1,6 @@
 <footer>
   <div class="footer-container">
-    <div class="zagolovok">
+    <div class="title">
       <div class="block">
         <img
         class="userIcon"
@@ -48,3 +48,37 @@
     </div>
   </div>
 </footer>
+
+<!-- modal -->
+    
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="closeModal">✖</button>
+    <h2 class="insert">Please, insert your data.</h2>
+    <form class="form">
+      <input type="email" id="email" name="email" placeholder="clients@gmail.com" required />
+      <input type="text" id="comments" name="comments" placeholder="comments" required />
+      <button type="submit" class="send">Send</button>
+    </form>
+  </div>
+</div>
+
+
+<div id="successModal" class="modal">
+  <div class="modal-content">
+    <button class="closeModal">✖</button>
+    <h2 class="success">Thank you for your interest in cooperation!</h2>
+    <p class="modal-text">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+  </div>
+</div>
+
+
+<div id="errorModal" class="modal">
+  <div class="modal-content">
+    <button class="closeModal">✖</button>
+    <h2 class="error">Error</h2>
+    <p class="modal-text">Something wrong! Please, check your data.</p>
+  </div>
+</div>
+
+

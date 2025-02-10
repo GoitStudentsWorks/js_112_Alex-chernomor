@@ -144,6 +144,8 @@ input {
 .modal.active {
     visibility: visible;
     opacity: 1;
+    display: flex;
+
 }
 
 
@@ -168,6 +170,32 @@ input {
     color: #fafafa;
 }
 
+.insert {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fafafa;
+}
+
+.success {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fafafa;
+}
+
+.error {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fafafa;
+}
 
 .modal-text {
     font-weight: 500;
@@ -181,8 +209,8 @@ input {
 
 .close-modal {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     border: none;
     background: none;
     font-size: 24px;
@@ -190,6 +218,8 @@ input {
     width: 22px;
     height: 22px;
 }
+
+
 
 @media only screen and (min-width: 768px) {
     .modal-content {
