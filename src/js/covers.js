@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { src: coversImg7, alt: 'energy.flow' },
     { src: coversImg8, alt: 'fruitbox' },
     { src: coversImg9, alt: 'englishexcellence' },
-    { src: coversImg10, alt: 'StarlightStudio' }
+    { src: coversImg10, alt: 'StarlightStudio' },
+    ];
 
 
   const rows = [1, 2, 3, 4].map(n => document.getElementById(`row${n}`));
