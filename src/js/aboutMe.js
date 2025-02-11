@@ -272,29 +272,29 @@ swiperContainer.appendChild(nextButton);
 
 containerTwo.appendChild(swiperContainer);
 
-const swiper = new Swiper('.swiper', {
-  slidesPerView: 1,
-  navigation: {
-    nextEl: '.swiper-button-next',
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  grabCursor: true,
-  centeredSlides: false,
-  loop: false,
-  breakpoints: {
-    768: {
-      slidesPerView: 2, // Для планшетов
-      slidesPerGroup: 2,
-      spaceBetween: 16,
-    },
-    1440: {
-      slidesPerView: 4, // Для десктопов
-      slidesPerGroup: 2,
-      spaceBetween: 16,
-    },
-  },
-});
+// const swiper = new Swiper('.swiper', {
+//   slidesPerView: 1,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//   },
+//   keyboard: {
+//     enabled: true,
+//     onlyInViewport: false,
+//   },
+//   grabCursor: true,
+//   centeredSlides: false,
+//   loop: false,
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 2, // Для планшетов
+//       slidesPerGroup: 2,
+//       spaceBetween: 16,
+//     },
+//     1440: {
+//       slidesPerView: 4, // Для десктопов
+//       slidesPerGroup: 2,
+//       spaceBetween: 16,
+//     },
+//   },
+// });
 
