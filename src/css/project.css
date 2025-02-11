@@ -1,5 +1,7 @@
+@import './projects-media.css';
 .list{list-style: none;  }
 .link{text-decoration: none; }
+
 .swiper {
     /* width: 200px;
     height: 200px; */
