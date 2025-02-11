@@ -207,6 +207,7 @@
             font-size: 14px;
             text-decoration: none;
             color: aliceblue;
+            padding: 10px
         }
     
         .link-wrap:last-child {
