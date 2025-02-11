@@ -73,7 +73,14 @@
 
 @media(min-width: 1440px) {
 .hero-container{
-    width: 1440px;
+    background-image: url(../img/imgJPEG/heroImg/herored.png.png);
+        width: 1440px;
+        height: 900px;
+        position: relative;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 .title-container{
@@ -111,7 +118,7 @@
         .title-container {
             display: flex;
             width: 1084px;
-           margin-left: 32px;
+            margin-left: 32px;
         }
     
         .main-title {
@@ -146,7 +153,6 @@
             font-size: 16px;
             text-decoration: none;
             color: aliceblue;
-           
             padding: 12px 12px 12px 12px;
         }
     
@@ -170,8 +176,15 @@
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  
         .hero-container {
+            background-image: url(../img/imgJPEG/heroImg/redage.png);
+            height: 1024px;
+            position: relative;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 187px;
             width: 405px;
         }
     
@@ -235,8 +248,16 @@
         }
     }
 @media (max-width: 374px) {
+   
 .hero-container {
         width: 375px;
+        background-image: url(../img/imgJPEG/heroImg/redagemobile.png);
+        position: relative;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 187px;
     }
 
     .title-container {
