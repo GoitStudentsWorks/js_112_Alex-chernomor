@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   const coversImages = [
-    { src: '../img/imgJPEG/coversImg/coversImg1.jpg', alt: 'PowerPulse' },
-    { src: '../img/imgJPEG/coversImg/coversImg2.jpg', alt: 'MIMINO' },
-    { src: '../img/imgJPEG/coversImg/coversImg3.jpg', alt: 'Ukrainian Art' },
-    { src: '../img/imgJPEG/coversImg/coversImg4.jpg', alt: 'GREEN.HARVEST' },
-    { src: '../img/imgJPEG/coversImg/coversImg5.jpg', alt: 'WALLET' },
-    { src: '../img/imgJPEG/coversImg/coversImg6.jpg', alt: 'chego jewelry' },
-    { src: '../img/imgJPEG/coversImg/coversImg7.jpg', alt: 'energy.flow' },
-    { src: '../img/imgJPEG/coversImg/coversImg8.jpg', alt: 'fruitbox' },
-    { src: '../img/imgJPEG/coversImg/coversImg9.jpg', alt: 'englishexcellence' },
-    { src: '../img/imgJPEG/coversImg/coversImg10.jpg', alt: 'StarlightStudio' }
+    { src: './img/imgJPEG/coversImg/coversImg1.jpg', alt: 'PowerPulse' },
+    { src: './img/imgJPEG/coversImg/coversImg2.jpg', alt: 'MIMINO' },
+    { src: './img/imgJPEG/coversImg/coversImg3.jpg', alt: 'Ukrainian Art' },
+    { src: './img/imgJPEG/coversImg/coversImg4.jpg', alt: 'GREEN.HARVEST' },
+    { src: './img/imgJPEG/coversImg/coversImg5.jpg', alt: 'WALLET' },
+    { src: './img/imgJPEG/coversImg/coversImg6.jpg', alt: 'chego jewelry' },
+    { src: './img/imgJPEG/coversImg/coversImg7.jpg', alt: 'energy.flow' },
+    { src: './img/imgJPEG/coversImg/coversImg8.jpg', alt: 'fruitbox' },
+    { src: './img/imgJPEG/coversImg/coversImg9.jpg', alt: 'englishexcellence' },
+    { src: './img/imgJPEG/coversImg/coversImg10.jpg', alt: 'StarlightStudio' }
   ];
 
   const rows = [1, 2, 3, 4].map(n => document.getElementById(`row${n}`));
