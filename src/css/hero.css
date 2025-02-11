@@ -73,9 +73,10 @@
 
 @media(min-width: 1440px) {
 .hero-container{
-    background-image: url(../img/imgJPEG/heroImg/herored.png.png);
+    background-image: url(../img/imgJPEG/heroImg/herored.png.png) no-repeat center center;
         width: 1440px;
         height: 900px;
+        background-size: cover;
         position: relative;
         padding: 0;
         display: flex;
@@ -104,9 +105,10 @@
         }
     
         .hero-container {
-            background-image: url(../img/imgJPEG/heroImg/herored.png.png);
+            background-image: url(../img/imgJPEG/heroImg/herored.png.png) no-repeat center center;
             width: 768px;
             height: 1024px;
+            background-size: cover;
             position: relative;
             padding: 0;
             display: flex;
@@ -177,8 +179,9 @@
 
 @media (min-width: 375px) and (max-width: 767px) {
         .hero-container {
-            background-image: url(../img/imgJPEG/heroImg/redage.png);
+            background-image: url(../img/imgJPEG/heroImg/redage.png) no-repeat center center;
             height: 1024px;
+            background-size: cover;
             position: relative;
             padding: 0;
             display: flex;
@@ -251,7 +254,8 @@
    
 .hero-container {
         width: 375px;
-        background-image: url(../img/imgJPEG/heroImg/redagemobile.png);
+        background-image: url(../img/imgJPEG/heroImg/redagemobile.png) no-repeat center center;
+        background-size: cover;
         position: relative;
         padding: 0;
         display: flex;
