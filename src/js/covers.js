@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { src: coversImg7, alt: 'energy.flow' },
     { src: coversImg8, alt: 'fruitbox' },
     { src: coversImg9, alt: 'englishexcellence' },
-    { src: coversImg10, alt: 'StarlightStudio' },
+    { src: coversImg10, alt: 'StarlightStudio' }
     ];
 
 
