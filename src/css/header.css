@@ -1,22 +1,16 @@
 header{
-    /* position: absolute; */
+    position: absolute;
+    z-index: 20;
     display: flex;
     background: none;
     width: 100%;
     justify-content: center;
 }
 
-
-/* @media screen and (min-width: 1200px) {
-    .container {
-      width: 1200px;
-    }
-  } */
-
 .logo-container{
     display: flex;
 }
-.menu-button{
+.menu-button{    
     background: none;
     border: none;
     padding: 0;
@@ -32,40 +26,41 @@ header{
     text-decoration-skip-ink: none;
     color: #fafafa;
 }
-
-
 .menu-button:hover, .menu-button:focus{
     color: #ed3b44;
 }
-
 .menu-div{
 height: 10px;
 flex-direction: column;
 text-align: center;
 }
-
 .img-logo{
     margin-right: 8px;
-    border-radius: 18px;
+    border-radius: 20px;
     width: 80px;
     height: 80px;
 }
-
 .logo-name{
     margin: 0;
     color: #FAFAFA;
 }
-
 .header-div{
-    margin-top: 30px;
-    width: 1440px;
+
+    margin-top: 32px;
+
+/*     padding-top: 32px; */
+
+    width: 1376px;
     height: 80px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    gap: 487px;
-}
 
+/*     margin-right: 43px; */
+ 
+  
+
+}
 .ankors-menu{
     margin-top: 16px;
     white-space: nowrap;
@@ -74,39 +69,219 @@ text-align: center;
     list-style: none;
     color: #FAFAFA;;
 }
-
-
-.acnkorLink{
+.ankorLink{
     margin-top: 5px;
 }
-
-.acnkorLink:hover, .acnkorLink:focus{
+.ankorLink:hover, .ankorLink:focus{
     color: #ed3b44;
     cursor: pointer
 }
-
-
 .is-hidden{
     opacity: 0;
     pointer-events: none;
     overflow: hidden;
-    pointer-events: none;   
+    pointer-events: none;  
     visibility: hidden;
   }
-
  .order-button{
     white-space: nowrap;
     background: none;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    padding: 18px 36px;
+    padding: 18px 24px 18px 24px;
     width: 187px;
     height: 55px;
     font-weight: 500;
     font-size: 16px;
-    color: #fafafa;
- } 
+    color: #FAFAFA;
 
- .order-button:hover, .order-button:focus{
-    background: #ed3b44;
+    background-color: none;
  }
+ .order-button:hover, .order-button:focus{
+    background: #E0373F;
+ }
+
+
+
+/*  @media(max-width: 375px) {
+
+.order-button {
+  display: none;
+
+}
+
+.header-div {
+    margin-top: 32px;
+    width: 343px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-right: 16px;
+    margin-left: 16px;
+
+
+}
+
+.menu-button {
+    display: none;
+}
+
+ } */
+
+ .menu-burger-button{
+    padding: 0;
+    flex-direction: column;
+    height: 28px;
+    width: 28px;
+    background: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+ }
+
+ .logo-container:hover{
+    cursor:default;
+ }
+
+@media (min-width: 375px) and (max-width: 767px) {
+
+.menu-button{
+    display: none;
+    justify-content: center;
+}
+
+.order-button-2{
+    white-space: nowrap;
+    background: none;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 24px 18px 24px;
+    width: 187px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FAFAFA;
+    background-color: none;
+}
+
+    
+
+.order-button-2:hover, .order-button-2:focus{
+   background: #E0373F;
+}
+  
+.order-button{
+   display: none;
+}
+
+.header-div {    
+    margin-top: 32px;
+    width: 375px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.burger-whipe {
+    z-index: 15;
+    display: block;
+    cursor: pointer;
+}
+
+
+.header-div{
+    position: relative;
+ 
+}
+
+.burger-menu-container {   
+    width: 100%; 
+}
+
+.menu-div-is-open{
+    position: absolute; 
+    display: flex;
+    
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 10; 
+}
+
+
+.menu-cont{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.order-button-2 {
+    position: absolute; 
+    bottom: 64px;   
+
+}
+}
+
+
+ @media(min-width: 768px) {
+
+    .order-button-2{
+        display: none;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    
+    .order-button{
+        display: block;
+    }
+    .burger-whipe {
+        display: none;
+    }
+    .header-div{
+        width: 768px;;
+    }
+    .burger-menu-container{
+        display: flex;
+    }
+    .header-div {
+        display: flex;
+        justify-content: center;         
+      }
+    
+      .burger-menu-container {
+        padding: 0;
+        margin: 0;      
+        position: relative;
+        width: 100%; 
+      }
+    
+      .menu-div {
+        display: flex;
+        align-items: center;
+        width: 100%;
+      }
+    
+     }
+
+     @media(min-width: 1440px) {
+      
+        .header-div{
+            width: 1440px;;
+        }
+        
+
+     
+     }
