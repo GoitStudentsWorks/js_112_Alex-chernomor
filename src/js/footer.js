@@ -1,7 +1,11 @@
+import iziToast from "izitoast";
+import "izitoast/dist/css/iziToast.min.css";
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
   const openModalBtn = document.getElementById("openModal");
-  const closeModalBtn = document.querySelector(".close");
+  const closeModalBtn = document.querySelector(".close-modal");
 
   
   openModalBtn.addEventListener("click", function (event) {
@@ -9,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.style.display = "flex";
   });
 
- 
+  
   closeModalBtn.addEventListener("click", function () {
     modal.style.display = "none";
   });
@@ -29,53 +33,46 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".intive-form");
 
-/*button*/
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); 
 
-const createImg = (imgDirect, className) => {
-    const img = document.createElement('img'); 
-    img.src = imgDirect; 
-    img.classList.add(className); 
-    return img;
-};
+        const formData = new FormData(form);
 
-
-
-const imgElement = createImg('../img/imgPNG/btn.png', 'send-button'); 
-const container = document.querySelector('.button-container'); 
-
-if (container) {
-    addImg(container, imgElement);
-} else {
-    console.error("not found!");
-}
-
-
-/*user*/
-
-
-import logoImg from '../img/imgJPEG/logoImg/logoImg-min.jpg';
-
-document.addEventListener("DOMContentLoaded", () => {
-    const titleContainer = document.querySelector('.title-div');
-
-
-
-    const createImg = (imgDirect, className) => {
-        const img = document.createElement('img');
-        img.src = imgDirect;
-        img.classList.add(className);
-        return img;
-    };
-
-    const addImg = (elemForImg, img) => {
-    if (elemForImg) {
-        elemForImg.prepend(img); 
-    } else {
-        console.error("not found!");
-    }
-};
-
-    addImg(titleContainer, createImg(logoImg, 'img-logo'));
+        fetch("http://localhost:5173/submit-form", { 
+            method: "POST",
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                iziToast.success({
+                    title: "Success!",
+                    message: "Your mail was send! ✅",
+                    position: "topRight",
+                    timeout: 5000
+                });
+                form.reset();
+            } else {
+                iziToast.error({
+                    title: "Error!",
+                    message: "Something wrong! ❌",
+                    position: "topRight",
+                    timeout: 5000
+                });
+            }
+        })
+        .catch(() => {
+            iziToast.warning({
+                title: "Warning!",
+                message: "Problem with server ⚠️",
+                position: "topRight",
+                timeout: 5000
+            });
+        });
+    });
 });
+
 
