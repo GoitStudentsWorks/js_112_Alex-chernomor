@@ -144,8 +144,6 @@
             font-size: 16px;
             text-decoration: none;
             color: aliceblue;
-           
-            padding: 12px 12px 12px 12px;
         }
     
         .link-wrap:last-child {
@@ -209,7 +207,6 @@
             font-size: 14px;
             text-decoration: none;
             color: aliceblue;
-            padding: 10px;
         }
     
         .link-wrap:last-child {
@@ -274,7 +271,6 @@
         font-size: 14px;
         text-decoration: none;
         color: aliceblue;
-        padding: 10px;
     }
 
     .link-wrap:last-child {
