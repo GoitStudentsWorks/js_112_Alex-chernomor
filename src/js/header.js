@@ -26,7 +26,7 @@ const createImg = (imgDirect,className)=>{
 const createAnkor = str =>{
     return`
     <li class='ankorLink'>
-    <a href='#'>${str}<a/
+    <a href='#'>${str}</a>
     <li/>
     `
 };

@@ -11,6 +11,7 @@ import coversImg10 from '../img/imgJPEG/coversImg/coversImg10.jpg';
 
 document.addEventListener('DOMContentLoaded', () => {
   const coversImages = [
+
     { src: coversImg1, alt: 'PowerPulse' },
     { src: coversImg2, alt: 'MIMINO' },
     { src: coversImg3, alt: 'Ukrainian Art' },
@@ -21,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { src: coversImg8, alt: 'fruitbox' },
     { src: coversImg9, alt: 'englishexcellence' },
     { src: coversImg10, alt: 'StarlightStudio' }
-  ];
+
 
   const rows = [1, 2, 3, 4].map(n => document.getElementById(`row${n}`));
 
