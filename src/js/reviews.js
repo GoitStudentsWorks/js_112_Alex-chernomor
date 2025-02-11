@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         1440: {
             slidesPerView: 4, // Для десктопов
             slidesPerGroup: 2,
-            spaceBetween: 16,
+            spaceBetween: 10,
         },
     },
 });
