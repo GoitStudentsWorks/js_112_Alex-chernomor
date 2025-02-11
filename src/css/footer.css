@@ -1,0 +1,272 @@
+.container {
+    max-width: 375px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.user {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+
+
+.lets-work {
+
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.work {
+    color: #ed3b44;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 32px;
+}
+
+.together {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+
+
+
+}
+
+.feedback-section {
+    margin-top: 63px;
+}
+
+.input-group-one,
+.input-group-two {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+
+
+}
+
+.input-group-two {
+    margin-bottom: 32px;
+}
+
+input {
+
+    padding: 8px 0;
+    border: none;
+    background: none;
+    color: #fafafa;
+    font-size: 16px;
+    outline: none;
+
+}
+
+.send-button {
+    background: none;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: #FAFAFA;
+    background-color: #E0373F;
+    margin-bottom: 64px;
+
+}
+
+.send-button:hover,
+.send-button:focus .send-button:hover {
+    opacity: 0.8;
+}
+
+.contacts {
+    box-sizing: border-box;
+    width: 100%;
+    height: 37px;
+    display: flex;
+    flex-direction: row;
+}
+
+.address-item {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    width: 100%;
+    height: 100%;
+    width: fit-content;
+    gap: 4px;
+    text-decoration: none;
+}
+
+/*modalka*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-content {
+    background: #1c1d20;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    width: 343px;
+    height: 276px;
+    text-align: center;
+    position: relative;
+}
+
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fafafa;
+
+}
+
+.modal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.6);
+
+
+
+}
+
+.text-box {
+    box-sizing: border-box;
+    width: 297px;
+    height: 148px;
+    margin-top: 64px;
+}
+
+@media (max-width: 374px) {
+    .container {
+        padding: 0 10px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin-left: 32px;
+
+    }
+
+    .user {
+        width: 70px;
+        height: 70px;
+        object-fit: contain;
+        border-radius: 24px;
+    }
+
+    .lets-work,
+    .together {
+        font-size: 64px;
+
+    }
+
+    .together {
+        margin-bottom: 64px;
+    }
+
+
+
+    .formfield {
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .input-group-one,
+    .input-group-two {
+        width: 245px;
+    }
+
+    .send-button {
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .feedback-section {
+        display: flex;
+        gap: 32px;
+        align-items: baseline;
+
+    }
+
+    .address-item {
+        font-size: 16px;
+    }
+
+    .modal-content {
+        width: 492px;
+        height: 246px;
+
+    }
+
+    .text-box {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
