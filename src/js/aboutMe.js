@@ -217,8 +217,8 @@ function createCards() {
       arrow.setAttribute(
         'href',
         isActive
-          ? '../img/imgSVG/sprite.svg#arrowUp'
-          : '../img/imgSVG/sprite.svg#arrowDown'
+          ? './img/imgSVG/sprite.svg#arrowUp'
+          : './img/imgSVG/sprite.svg#arrowDown'
       );
       descriptionDiv.style.display = isActive ? 'block' : 'none';
     });
@@ -266,7 +266,7 @@ swiperContainer.appendChild(skillsList);
 
 const nextButton = document.createElement('div');
 nextButton.classList.add('swiper-button-next');
-nextButton.innerHTML = `<span><svg width='40px' height='40px'><use href='../img/imgSVG/sprite.svg#arrowRight'></use></svg></span>`;
+nextButton.innerHTML = `<span><svg width='40px' height='40px'><use href='./img/imgSVG/sprite.svg#arrowRight'></use></svg></span>`;
 
 swiperContainer.appendChild(nextButton);
 
