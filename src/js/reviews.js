@@ -1,11 +1,19 @@
 document.addEventListener("DOMContentLoaded", async () => {
     const reviewsList = document.getElementById("reviews-list");
     const errorMessage = document.getElementById("error-message");
+
+    if (!reviewsList || !errorMessage) {
+        console.error("Не найдены элементы #reviews-list или #error-message");
+        return;
+    }
+
     try {
         const response = await fetch("https://portfolio-js.b.goit.study/api/reviews");
         if (!response.ok) throw new Error("Failed to fetch reviews");
+
         const reviews = await response.json();
-        if (reviews.length === 0) throw new Error("No reviews found");
+        if (!Array.isArray(reviews) || reviews.length === 0) throw new Error("No reviews found");
+
         reviewsList.innerHTML = reviews
             .map(review => `
                 <li class="swiper-slide">
@@ -15,33 +23,42 @@ document.addEventListener("DOMContentLoaded", async () => {
                 </li>
             `)
             .join("");
-        new Swiper(".swiper", {
-    slidesPerView: 1, 
-    spaceBetween: 0, 
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: true,
-    },
-    grabCursor: true,
-    centeredSlides: false, 
-    loop: false, 
-    breakpoints: {
-        768: {
-            slidesPerView: 2, // Для планшетов
-            slidesPerGroup: 2,
-            spaceBetween: 16,
-        },
-        1440: {
-            slidesPerView: 4, // Для десктопов
-            slidesPerGroup: 2,
-            spaceBetween: 10,
-        },
-    },
-});
+
+        // Проверяем, появился ли в DOM контейнер Swiper
+        setTimeout(() => {
+            const swiperContainer = document.querySelector(".swiper");
+            if (swiperContainer) {
+                new Swiper(".swiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    keyboard: {
+                        enabled: true,
+                        onlyInViewport: true,
+                    },
+                    grabCursor: true,
+                    centeredSlides: false,
+                    loop: false,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 2,
+                            slidesPerGroup: 2,
+                            spaceBetween: 16,
+                        },
+                        1440: {
+                            slidesPerView: 4,
+                            slidesPerGroup: 2,
+                            spaceBetween: 10,
+                        },
+                    },
+                });
+            } else {
+                console.warn("Swiper контейнер не найден");
+            }
+        }, 100);
     } catch (error) {
         console.error(error);
         errorMessage.style.display = "block";
