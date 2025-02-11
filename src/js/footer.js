@@ -1,72 +1,81 @@
-export const messageFunctionFoot = function(){
-    console.log("this is footer");
-};
-/*modalka*/
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("modal");
-  const successModal = document.getElementById("successModal");
-  const errorModal = document.getElementById("errorModal");
-
   const openModalBtn = document.getElementById("openModal");
-  const closeModalBtns = document.querySelectorAll(".closeModal");
-  const form = document.querySelector(".form");
+  const closeModalBtn = document.querySelector(".close");
 
   
-  openModalBtn.addEventListener("click", () => {
-    modal.classList.add("active");
+  openModalBtn.addEventListener("click", function (event) {
+    event.preventDefault();
+    modal.style.display = "flex";
+  });
+
+ 
+  closeModalBtn.addEventListener("click", function () {
+    modal.style.display = "none";
   });
 
   
-  closeModalBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      modal.classList.remove("active");
-      successModal.classList.remove("active");
-      errorModal.classList.remove("active");
-    });
-  });
-
-  
-  window.addEventListener("click", (event) => {
-    if (event.target === modal || event.target === successModal || event.target === errorModal) {
-      modal.classList.remove("active");
-      successModal.classList.remove("active");
-      errorModal.classList.remove("active");
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
     }
   });
 
   
-  document.addEventListener("keydown", (event) => {
+  document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-      modal.classList.remove("active");
-      successModal.classList.remove("active");
-      errorModal.classList.remove("active");
-    }
-  });
-
-  /*AJAX*/
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault(); 
-    const formData = {
-      email: document.getElementById("email").value,
-      comments: document.getElementById("comments").value,
-    };
-
-    try {
-      const response = await fetch("https://your-server.com/api/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (!response.ok) {
-        throw new Error("Error!");
-      }
-
-      modal.classList.remove("active");
-      successModal.classList.add("active"); 
-      form.reset(); 
-    } catch (error) {
-      errorModal.classList.add("active"); 
+      modal.style.display = "none";
     }
   });
 });
+
+
+/*button*/
+
+const createImg = (imgDirect, className) => {
+    const img = document.createElement('img'); 
+    img.src = imgDirect; 
+    img.classList.add(className); 
+    return img;
+};
+
+
+
+const imgElement = createImg('../img/imgPNG/btn.png', 'send-button'); 
+const container = document.querySelector('.button-container'); 
+
+if (container) {
+    addImg(container, imgElement);
+} else {
+    console.error("not found!");
+}
+
+
+/*user*/
+
+
+import logoImg from '../img/imgJPEG/logoImg/logoImg-min.jpg';
+
+document.addEventListener("DOMContentLoaded", () => {
+    const titleContainer = document.querySelector('.title-div');
+
+
+
+    const createImg = (imgDirect, className) => {
+        const img = document.createElement('img');
+        img.src = imgDirect;
+        img.classList.add(className);
+        return img;
+    };
+
+    const addImg = (elemForImg, img) => {
+    if (elemForImg) {
+        elemForImg.prepend(img); 
+    } else {
+        console.error("not found!");
+    }
+};
+
+    addImg(titleContainer, createImg(logoImg, 'img-logo'));
+});
+
