@@ -2,25 +2,25 @@ import iconPath from '../img/imgSVG/sprite.svg';
 
 const benefitsData = [
   {
-    iconId: 'icon-user',
+    iconId: 'userSVG',
     title: 'Expertise',
     description:
       'As a highly experienced developer, I have deep knowledge of programming and website development.',
   },
   {
-    iconId: 'icon-dialog',
+    iconId: 'dialogSVG',
     title: 'Communication',
     description:
       'Understanding your needs and wants is my priority and I am always open     to discussions and corrections.',
   },
   {
-    iconId: 'icon-pen',
+    iconId: 'penSVG',
     title: 'Art',
     description:
       'Thanks to my creative nature, I am ready to accept challenges and help you bring your ideas to life.',
   },
   {
-    iconId: 'icon-hourglass',
+    iconId: 'hourglassSVG',
     title: 'Urgent execution',
     description:
       'I understand how important time is to you. Ready to work quickly and efficiently, without reducing the quality of work.',
@@ -47,8 +47,10 @@ const createBenefitEl = ({ iconId, title, description }) => {
 
 const createBenefitsTemplate = arr => arr.map(createBenefitEl).join('');
 
-export const addBenefitsTemplate = () =>
+const addBenefitsTemplate = () =>
   benefitsList.insertAdjacentHTML(
     'beforeend',
     createBenefitsTemplate(benefitsData)
   );
+
+addBenefitsTemplate();
