@@ -98,5 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  
+
   observer.observe(coversSection);
 });
