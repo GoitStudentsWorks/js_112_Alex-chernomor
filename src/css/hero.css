@@ -74,10 +74,10 @@
 @media(min-width: 1440px) {
 .hero-container{
     background: linear-gradient(to right,
-                rgba(100, 0, 0, 0.5) 1000px,
+                rgba(100, 0, 0, 0.5) 100px,
                 rgba(100 0, 0, 0.5) 100px),
             repeating-linear-gradient(90deg,
-                rgba(225, 0, 0, 0.5) 1000px,
+                rgba(225, 0, 0, 0.5) 100px,
                 rgba(255, 0, 0, 0.5) 160px,
                 rgba(0, 0, 0, 0) 100px,
                 rgba(0, 0, 0, 0) 160px),
@@ -119,11 +119,11 @@
                     rgba(100, 0, 0, 0.5) 1000px,
                     rgba(100 0, 0, 0.5) 100px),
              repeating-linear-gradient(90deg,
-                rgba(225, 0, 0, 0.5) 1000px,
+                rgba(225, 0, 0, 0.5) 100px,
                 rgba(255, 0, 0, 0.5) 160px,
-                rgba(0, 0, 0, 0) 100px,
-                rgba(0, 0, 0, 0) 160px
-             
+                rgba(255, 0, 0, 0) 100px,
+                rgba(255, 0, 0, 0) 160px
+              
              ),
              url(../img/imgJPEG/heroImg/redage.png);
             background-position: center;
