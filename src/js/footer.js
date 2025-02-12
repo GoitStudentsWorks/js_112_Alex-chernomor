@@ -1,53 +1,32 @@
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
-
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("formfield");
   const modal = document.getElementById("modal");
   const closeModalBtn = document.querySelector(".close-modal");
-
- 
 
   form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     const formData = new FormData(form);
 
-    fetch("https://your-server.com/submit-form", { 
+    fetch("http://www.goit.com", {
       method: "POST",
       body: formData,
     })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        iziToast.success({
-          title: "Success!",
-          message: "Your mail was sent! ✅",
-          position: "topRight",
-          timeout: 5000
-        });
-
-        form.reset();
-      } else {
-        iziToast.error({
-          title: "Error!",
-          message: "Something went wrong! ❌",
-          position: "topRight",
-          timeout: 5000
-        });
-      }
-    })
-    .catch(() => {
-      iziToast.warning({
-        title: "Warning!",
-        message: "Problem with the server ⚠️",
-        position: "topRight",
-        timeout: 5000
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          alert("✅ Your mail was sent successfully!");
+          form.reset();
+          modal.style.display = "flex";
+        } else {
+          alert("❌ Something wrong! Please try again.");
+        }
+      })
+      .catch(() => {
+        alert("⚠️ Problem with the server. Please try later.");
       });
-    });
   });
 
-  
   closeModalBtn.addEventListener("click", function () {
     modal.style.display = "none";
   });
@@ -64,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
 
 
 
