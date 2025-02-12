@@ -5,7 +5,7 @@
 }
 
 .hero-container {
-    background-image: url(../img/imgJPEG/heroImg/herored.png.png);
+    background-image: url(../img/imgJPEG/heroImg/herored.png);
     width: 1440px;
     height: 900px;
     position: relative;
@@ -73,15 +73,25 @@
 
 @media(min-width: 1440px) {
 .hero-container{
-    background-image: url(../img/imgJPEG/heroImg/herored.png.png) no-repeat center center;
-        width: 1440px;
-        height: 900px;
-        background-size: cover;
-        position: relative;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    background: linear-gradient(to right,
+                rgba(100, 0, 0, 0.5) 1000px,
+                rgba(100 0, 0, 0.5) 100px),
+            repeating-linear-gradient(90deg,
+                rgba(225, 0, 0, 0.5) 1000px,
+                rgba(255, 0, 0, 0.5) 160px,
+                rgba(0, 0, 0, 0) 100px,
+                rgba(0, 0, 0, 0) 160px),
+    url(../img/imgJPEG/heroImg/redage.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    width: 1440px;
+    height: 900px;
+    position: relative;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .title-container{
@@ -105,10 +115,21 @@
         }
     
         .hero-container {
-            background-image: url(../img/imgJPEG/heroImg/herored.png.png) no-repeat center center;
-            width: 768px;
-            height: 1024px;
+            background: linear-gradient( to right,
+                    rgba(100, 0, 0, 0.5) 1000px,
+                    rgba(100 0, 0, 0.5) 100px),
+             repeating-linear-gradient(90deg,
+                rgba(225, 0, 0, 0.5) 1000px,
+                rgba(255, 0, 0, 0.5) 160px,
+                rgba(0, 0, 0, 0) 100px,
+                rgba(0, 0, 0, 0) 160px
+             
+             ),
+             url(../img/imgJPEG/heroImg/redage.png);
+            background-position: center;
             background-size: cover;
+            background-blend-mode: overlay;
+            height: 1024px;
             position: relative;
             padding: 0;
             display: flex;
@@ -130,6 +151,7 @@
             text-transform: uppercase;
             font-weight: 500;
             color: #FAFAFA;
+            margin-left: 32px;
         }
     
         .list-link {
@@ -179,9 +201,19 @@
 
 @media (min-width: 375px) and (max-width: 767px) {
         .hero-container {
-            background-image: url(../img/imgJPEG/heroImg/redage.png) no-repeat center center;
-            height: 1024px;
+            background: linear-gradient(to right,
+                        rgba(100, 0, 0, 0.5) 1000px,
+                        rgba(100 0, 0, 0.5) 100px),
+                    repeating-linear-gradient(90deg,
+                        rgba(225, 0, 0, 0.5) 1000px,
+                        rgba(255, 0, 0, 0.5) 160px,
+                        rgba(0, 0, 0, 0) 100px,
+                        rgba(0, 0, 0, 0) 160px),
+                    url(../img/imgJPEG/heroImg/redagemobile.png);
+            background-position: center;
             background-size: cover;
+            background-blend-mode: overlay;
+            height: 1024px;
             position: relative;
             padding: 0;
             display: flex;
@@ -254,8 +286,18 @@
    
 .hero-container {
         width: 375px;
-        background-image: url(../img/imgJPEG/heroImg/redagemobile.png) no-repeat center center;
+        background: linear-gradient(to right,
+                    rgba(100, 0, 0, 0.5) 1000px,
+                    rgba(100 0, 0, 0.5) 100px),
+                repeating-linear-gradient(90deg,
+                    rgba(225, 0, 0, 0.5) 1000px,
+                    rgba(255, 0, 0, 0.5) 160px,
+                    rgba(0, 0, 0, 0) 100px,
+                    rgba(0, 0, 0, 0) 160px),
+                url(../img/imgJPEG/heroImg/redagemobile.png);
+            background-position: center;
         background-size: cover;
+        background-blend-mode: overlay;
         position: relative;
         padding: 0;
         display: flex;
