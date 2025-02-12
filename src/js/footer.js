@@ -4,42 +4,28 @@ document.addEventListener("DOMContentLoaded", function () {
   const closeModalBtn = document.querySelector(".close-modal");
 
   form.addEventListener("submit", function (event) {
-    event.preventDefault();
+    event.preventDefault(); 
 
-    const formData = new FormData(form);
-
-    fetch("http://www.goit.com", {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.success) {
-          alert("✅ Your mail was sent successfully!");
-          form.reset();
-          modal.style.display = "flex";
-        } else {
-          alert("❌ Something wrong! Please try again.");
-        }
-      })
-      .catch(() => {
-        alert("⚠️ Problem with the server. Please try later.");
-      });
+   
+    modal.classList.remove("is-hidden");
   });
 
+  form.reset();
+  
   closeModalBtn.addEventListener("click", function () {
-    modal.style.display = "none";
+    modal.classList.add("is-hidden");
   });
 
   window.addEventListener("click", function (event) {
     if (event.target === modal) {
-      modal.style.display = "none";
+      modal.classList.add("is-hidden");
     }
   });
 
+
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
-      modal.style.display = "none";
+      modal.classList.add("is-hidden");
     }
   });
 });
