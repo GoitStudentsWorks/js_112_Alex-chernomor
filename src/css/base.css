@@ -1,0 +1,58 @@
+:root {
+  /* Шрифты: */
+  font-family: 'Inter', sans-serif;
+  /* hover: */
+  --light-crimson: #ed3b44;
+  /* color-button: */
+  --dark-crimson: #e0373f;
+  /* background */
+  --dark: #1c1d20;
+  /* Cards: */
+  --dark-gray: #242527;
+  /* Array/logo: */
+  --gray: #3b3b3b;
+  /* For links and etc */
+  --white: #fafafa;
+  /* Success: */
+  --green: #3cbc81;
+}
+
+body {
+  background-color: var(--dark);
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+/* reset */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}

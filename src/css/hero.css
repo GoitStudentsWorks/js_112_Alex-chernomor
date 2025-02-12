@@ -43,6 +43,7 @@
         }
     
         .hero-container {
+
             background: linear-gradient( to right,
                     rgba(100, 0, 0, 0.5) 1000px,
                     rgba(100 0, 0, 0.5) 100px),
@@ -58,12 +59,12 @@
             background-size: cover;
             background-blend-mode: overlay;
             height: 1024px;
+
             position: relative;
             padding: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-bottom: 187px;
         }
     
         .title-container {
@@ -104,8 +105,9 @@
         .link-wrap a {
             font-size: 16px;
             text-decoration: none;
-            color: aliceblue;
+
             padding: 12px 12px 12px 12px;
+
         }
     
         .link-wrap:last-child {
@@ -187,7 +189,7 @@
             font-size: 14px;
             text-decoration: none;
             color: aliceblue;
-            padding: 10px;
+            padding: 10px
         }
     
         .link-wrap:last-child {
@@ -271,7 +273,6 @@
         font-size: 14px;
         text-decoration: none;
         color: aliceblue;
-        padding: 10px;
     }
 
     .link-wrap:last-child {
@@ -294,6 +295,4 @@
         background-color: #E0373F;
     }
 }
-
-
 
