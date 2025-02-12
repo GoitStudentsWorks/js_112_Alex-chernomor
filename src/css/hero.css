@@ -1,11 +1,18 @@
-.hero {
-    display: flex;
-    height: 900px;
-    justify-content: center;
-}
 
-.hero-container {
-    background-image: url(../img/imgJPEG/heroImg/herored.png.png);
+@media(min-width: 1440px) {
+.hero-container{
+    background: linear-gradient(to right,
+                rgba(100, 0, 0, 0.5) 100px,
+                rgba(100 0, 0, 0.5) 100px),
+            repeating-linear-gradient(90deg,
+                rgba(225, 0, 0, 0.5) 100px,
+                rgba(255, 0, 0, 0.5) 160px,
+                rgba(0, 0, 0, 0) 100px,
+                rgba(0, 0, 0, 0) 160px),
+    url(../img/imgJPEG/heroImg/redage.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
     width: 1440px;
     height: 900px;
     position: relative;
@@ -13,67 +20,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-
-
-.main-title {
-    font-size: 90px;
-    line-height: 90px;
-    align-items: center;
-    text-transform: uppercase;
-    font-weight: 500;
-    color: #FAFAFA;
-
-}
-
-.list-link {
-    position: absolute;
-    display: flex;
-    list-style: none;
-    bottom: 0;
-    right: 0;
-}
-
-.link-wrap:not(:last-child) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 50%;
-    margin-right: 8px;
-}
-
-.link-wrap a {
-    font-size: 16px;
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.link-wrap:last-child {
-    margin-left: 34px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    padding: 18px;
-    text-align: center;
-    margin: 0 auto;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
-    color: #FAFAFA
-}
-
-.link-wrap:hover,
-.link-wrap:focus {
-    background-color: #E0373F;
-}
-
-
-
-@media(min-width: 1440px) {
-.hero-container{
-    width: 1440px;
 }
 
 .title-container{
@@ -97,8 +43,23 @@
         }
     
         .hero-container {
-            background-image: url(../img/imgJPEG/heroImg/herored.png.png);
-            width: 768px;
+
+            background: linear-gradient( to right,
+                    rgba(100, 0, 0, 0.5) 1000px,
+                    rgba(100 0, 0, 0.5) 100px),
+             repeating-linear-gradient(90deg,
+                rgba(225, 0, 0, 0.5) 100px,
+                rgba(255, 0, 0, 0.5) 160px,
+                rgba(255, 0, 0, 0) 100px,
+                rgba(255, 0, 0, 0) 160px
+              
+             ),
+             url(../img/imgJPEG/heroImg/redage.png);
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: overlay;
+            height: 1024px;
+
             position: relative;
             padding: 0;
             display: flex;
@@ -109,7 +70,7 @@
         .title-container {
             display: flex;
             width: 1084px;
-           margin-left: 32px;
+            margin-left: 32px;
         }
     
         .main-title {
@@ -119,6 +80,7 @@
             text-transform: uppercase;
             font-weight: 500;
             color: #FAFAFA;
+            margin-left: 32px;
         }
     
         .list-link {
@@ -143,7 +105,9 @@
         .link-wrap a {
             font-size: 16px;
             text-decoration: none;
-            color: aliceblue;
+
+            padding: 12px 12px 12px 12px;
+
         }
     
         .link-wrap:last-child {
@@ -166,8 +130,26 @@
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  
         .hero-container {
+            background: linear-gradient(to right,
+                        rgba(100, 0, 0, 0.5) 1000px,
+                        rgba(100 0, 0, 0.5) 100px),
+                    repeating-linear-gradient(90deg,
+                        rgba(225, 0, 0, 0.5) 1000px,
+                        rgba(255, 0, 0, 0.5) 160px,
+                        rgba(0, 0, 0, 0) 100px,
+                        rgba(0, 0, 0, 0) 160px),
+                    url(../img/imgJPEG/heroImg/redagemobile.png);
+            background-position: center;
+            background-size: cover;
+            background-blend-mode: overlay;
+            height: 1024px;
+            position: relative;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 187px;
             width: 405px;
         }
     
@@ -231,8 +213,27 @@
         }
     }
 @media (max-width: 374px) {
+   
 .hero-container {
         width: 375px;
+        background: linear-gradient(to right,
+                    rgba(100, 0, 0, 0.5) 1000px,
+                    rgba(100 0, 0, 0.5) 100px),
+                repeating-linear-gradient(90deg,
+                    rgba(225, 0, 0, 0.5) 1000px,
+                    rgba(255, 0, 0, 0.5) 160px,
+                    rgba(0, 0, 0, 0) 100px,
+                    rgba(0, 0, 0, 0) 160px),
+                url(../img/imgJPEG/heroImg/redagemobile.png);
+            background-position: center;
+        background-size: cover;
+        background-blend-mode: overlay;
+        position: relative;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 187px;
     }
 
     .title-container {
