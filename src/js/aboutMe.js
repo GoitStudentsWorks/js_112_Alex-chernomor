@@ -1,6 +1,3 @@
-export const messageFunctionAB = function () {
-  console.log('this is about me');
-};
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
@@ -69,31 +66,9 @@ function createCards() {
       descriptionList.appendChild(listItem);
     });
 
-    button.addEventListener('click', () => {
-      card.classList.toggle('active');
-      const arrow = button.querySelector('svg use');
-      const isActive = card.classList.contains('active');
-      arrow.setAttribute(
-        'href',
-        isActive
-          ? '../img/imgSVG/sprite.svg#arrowUp'
-          : '../img/imgSVG/sprite.svg#arrowDown'
-      );
-      descriptionDiv.style.display = isActive ? 'block' : 'none';
-    });
-
-    descriptionDiv.appendChild(descriptionList);
-    title.appendChild(button);
-    card.appendChild(title);
-    card.appendChild(descriptionDiv);
-
-    container.appendChild(card);
-  });
-}
-
-createCards();
-
-const containerTwo = document.querySelector('.skills-slider-about-me');
+    createCards();
+    
+    const containerTwo = document.querySelector('.skills-slider-about-me');
 
 const swiperContainer = document.createElement('div');
 swiperContainer.classList.add('swiper-about-me');
@@ -118,15 +93,41 @@ const createSkill = str => {
     `;
 };
 const createSkillTemplate = arr => arr.map(el => createSkill(el)).join('');
+//     button.addEventListener('click', () => {
+//       card.classList.toggle('active');
+//       const arrow = button.querySelector('svg use');
+//       const isActive = card.classList.contains('active');
+//       arrow.setAttribute(
+//         'href',
+//         isActive
+//           ? '../img/imgSVG/sprite.svg#arrowUp'
+//           : '../img/imgSVG/sprite.svg#arrowDown'
+//       );
+//       descriptionDiv.style.display = isActive ? 'block' : 'none';
+//     });
 
-skillsList.innerHTML = createSkillTemplate(skillsArr);
+//     descriptionDiv.appendChild(descriptionList);
+//     title.appendChild(button);
+//     card.appendChild(title);
+//     card.appendChild(descriptionDiv);
 
-swiperContainer.appendChild(skillsList);
+//     container.appendChild(card);
+//   });
+// }
 
-const nextButton = document.createElement('div');
-nextButton.classList.add('swiper-button-next-about-me');
-nextButton.innerHTML = `<span><svg width='40px' height='40px'><use href='../img/imgSVG/sprite.svg#arrowRight'></use></svg></span>`;
 
-swiperContainer.appendChild(nextButton);
+    
 
-containerTwo.appendChild(swiperContainer);
+
+// skillsList.innerHTML = createSkillTemplate(skillsArr);
+
+// swiperContainer.appendChild(skillsList);
+
+// const nextButton = document.createElement('div');
+// nextButton.classList.add('swiper-button-next-about-me');
+// nextButton.innerHTML = `<span><svg width='40px' height='40px'><use href='../img/imgSVG/sprite.svg#arrowRight'></use></svg></span>`;
+
+// swiperContainer.appendChild(nextButton);
+
+// containerTwo.appendChild(swiperContainer);
+
