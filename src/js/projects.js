@@ -1,7 +1,7 @@
 import projectImgOne from '../img/imgJPEG/projectImg/projectImg1.jpg';
 import projectImgTwo from  '../img/imgJPEG/projectImg/projectImg2.jpg';
 import projectImgThree from '../img/imgJPEG/projectImg/projectImg3.jpg';
-
+import pathBtn from '../img/imgSVG/sprite.svg';
 const projectsArr = [
   {
     projectName: 'Programming Across Borders: Ideas, Technologies, Innovations',
