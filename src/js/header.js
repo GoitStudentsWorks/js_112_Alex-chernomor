@@ -23,15 +23,18 @@ const createImg = (imgDirect,className)=>{
     return img
 };
 
-const createAnkor = str =>{
+const createAnkor = (str, id) =>{
     return`
     <li class='ankorLink'>
-    <a href='#'>${str}</a>
+    <a href='#${id}'>${str}</a>
     <li/>
     `
 };
 
-const createAnkorTemplate = arr => arr.map(el=>createAnkor(el)).join('');
+const createId = str => str.toLowerCase().split(" ").join("-")
+
+
+const createAnkorTemplate = arr => arr.map(el=>createAnkor(el,createId(el))).join('');
 
 const addAnkorTemplate = template => ankorList.insertAdjacentHTML('beforeend', template);
 
