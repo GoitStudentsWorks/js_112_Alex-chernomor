@@ -1,4 +1,31 @@
 /* Mobile First */
+.container {
+    max-width: 375px;
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+
 .reviews-section {
     margin-top: 64px;
     margin-bottom: 64px;
@@ -11,16 +38,14 @@
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.4);
     text-align: start;
-    /* margin: 0; */
-    margin-left: 16px;
     padding-bottom: 32px;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 .swiper {
     position: relative;
     overflow: hidden;
-    /* width: 100%; */
     width: 343px;
     margin: auto;
 }
@@ -102,10 +127,6 @@
 /* Планшеты (от 768px) */
 @media (min-width: 768px) {
 
-    .reviews-section h2 {
-        margin-left: 32px;
-    }
-    
     .reviews-section {
         margin-top: 96px;
         margin-bottom: 96px;
@@ -127,27 +148,28 @@
         max-width: calc(50% - 8px) !important;
     }
 
-        .swiper-button-prev,
-        .swiper-button-next {
-            width: 68px;
-            height: 68px;
-        }
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 68px;
+        height: 68px;
+    }
 
-        .swiper-button-prev svg,
-        .swiper-button-next svg {
-            width: 68px !important;
-            height: px !important;
-        }
+    .swiper-button-prev svg,
+    .swiper-button-next svg {
+        width: 68px !important;
+        height: px !important;
+    }
 
 }
 
 /* Десктопы (от 1440px) */
 @media (min-width: 1440px) {
     .reviews-section {
-            margin-top: 164px;
-            margin-bottom: 164px;
-           
-        }
+        margin-top: 164px;
+        margin-bottom: 164px;
+
+    }
+
     .swiper {
         width: 100%;
         max-width: 1376px;

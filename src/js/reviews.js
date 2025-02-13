@@ -73,10 +73,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         console.error(error);
         errorMessage.style.display = "block";
         reviewsList.style.display = "none";
-        buttonContainer.style.display = "none"; // Скрываем кнопки при ошибке
+        buttonContainer.style.display = "none";
     }
 
-    // Добавляем стили для дизейбленных кнопок
+    // Cтили для дизейбленных кнопок
     const style = document.createElement("style");
     style.innerHTML = `
         .swiper-button-prev.disabled,
