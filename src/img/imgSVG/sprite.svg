@@ -21,7 +21,7 @@
     <path d="M31.3333 42L23.3333 34L31.3333 26" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 68" id="arrowRight">
-    <rect x="0.5" y="0.5" width="67" height="67" rx="33.5" stroke="#FAFAFA" stroke-opacity="0.5"></rect>
+    <rect x="0.5" y="0.5" width="67" height="67" rx="33.5" stroke="#FAFAFA" stroke-opacity="0.5" ></rect>
     <path d="M23.3333 34H44.6666" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M36.6667 26L44.6667 34L36.6667 42" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>

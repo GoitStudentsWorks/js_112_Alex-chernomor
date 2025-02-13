@@ -1,4 +1,4 @@
-/* Styles for Mobile devices */
+
 .container {
   min-width: 320px;
   max-width: 375px;
@@ -10,44 +10,22 @@
 /* @media only screen and (min-width: 768px) { */
   .container {
     max-width: 768px;
+
+    padding: 0 32px;
   }
-  .container-into-project {
-    /* width: 100%; */
-    width: 500px;
   }
-  .project-left-part{
-    width:500px;
-}
-  .project-content{
-    margin-top: 64px;
-    margin-left: 64px;
-    width: 500px;
-  }
-  .project-ul {   
-    margin-top: 64px;
-    margin-bottom: 164px;
+
+  @media only screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+      padding: 0 32px;
     }
-  .project-text {
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: -0.03em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
-  .project-img{
-    width: 614px;
-    height: 385px;
-    margin-top: 120px;
-    margin-left: 45px;
-  }
-  .project-div-a{
-    margin-top:64px;
-    margin-bottom: 64px;}
-  .project-btn{
-    margin-left: 64px;
-  }
+
+  @media only screen and (min-width: 1440px) {
+    .container {
+      max-width: 1440px;
+
 }
 /* Styles for Desktop devices */
 @media  screen and (min-width: 858px) {
@@ -70,3 +48,4 @@
 
   
 }
+
