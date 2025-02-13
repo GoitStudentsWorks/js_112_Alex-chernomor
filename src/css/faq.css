@@ -115,6 +115,9 @@
 
 /* ====== Адаптивность ====== */
 @media (min-width: 1440px) {
+  .faq{
+    width: 1440px
+  }
   .faq-grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -125,6 +128,9 @@
 }
 
 @media (min-width: 768px) {
+    .faq{
+    width: 768px
+  }
   .faq-question {
     font-size: 1em;
     padding: 12px;
@@ -132,6 +138,9 @@
 }
 
 @media (min-width: 375px) {
+    .faq{
+    width:375px
+  }
   .faq-grid {
     flex-direction: column;
   }
