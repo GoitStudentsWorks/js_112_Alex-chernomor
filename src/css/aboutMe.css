@@ -1,42 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  line-height: 1.5;
-  background-color: #1c1d20;
-  color: #fff;
-  overflow-x: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-}
-
-ul,
-ol {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 button {
   font-family: inherit;
   border: none;
@@ -547,5 +508,26 @@ button {
     align-items: center;
     font-size: 16px;
     letter-spacing: -0.02em;
+  }
+}
+
+
+.about-me-section .container {
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media only screen and (min-width: 768px) {
+  .about-me-section .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .about-me-section .container {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
   }
 }
