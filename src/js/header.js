@@ -12,26 +12,29 @@ const burgerSVG = document.querySelector('.burgerSvgIcon');
 
 const ankorArr = ['About me','Benefits','Projects','FAQ'];
 
-const addImg = (elemForImg, img)=>{
+export const addImg = (elemForImg, img)=>{
     elemForImg.prepend(img);
 };
 
-const createImg = (imgDirect,className)=>{
+export const createImg = (imgDirect,className)=>{
     const img = document.createElement('img');
     img.src = imgDirect;  
     img.classList.add(className);
     return img
 };
 
-const createAnkor = str =>{
+const createAnkor = (str, id) =>{
     return`
     <li class='ankorLink'>
-    <a href='#'>${str}</a>
+    <a href='#${id}'>${str}</a>
     <li/>
     `
 };
 
-const createAnkorTemplate = arr => arr.map(el=>createAnkor(el)).join('');
+const createId = str => str.toLowerCase().split(" ").join("-")
+
+
+const createAnkorTemplate = arr => arr.map(el=>createAnkor(el,createId(el))).join('');
 
 const addAnkorTemplate = template => ankorList.insertAdjacentHTML('beforeend', template);
 
