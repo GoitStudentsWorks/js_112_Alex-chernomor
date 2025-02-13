@@ -6,7 +6,7 @@
 
 
 .hero-container {
-    background-image: url(../img/imgJPEG/heroImg/herored.png.png);
+    background-image: url(../img/imgJPEG/heroImg/hero.jpg);
     width: 1440px;
     height: 900px;
     position: relative;
@@ -98,7 +98,7 @@
         }
     
         .hero-container {
-            background-image: url(../img/imgJPEG/heroImg/herored.png.png);
+            background-image: url(../img/imgJPEG/heroImg/hero-tablet-min.jpg);
             width: 768px;
             position: relative;
             padding: 0;
@@ -169,6 +169,9 @@
 @media (min-width: 375px) and (max-width: 767px) {
   
         .hero-container {
+                background-image: url(../img/imgJPEG/heroImg/glass-effect-min.jpg);
+
+
             width: 405px;
         }
     
@@ -185,6 +188,7 @@
         padding-bottom: 212px;
     }
         .list-link {
+            /* width: 342px; */
             position: absolute;
             display: flex;
             list-style: none;
@@ -249,7 +253,7 @@
     }
 
     .list-link {
-        position: absolute;
+        /* position: absolute; */
         display: flex;
         list-style: none;
         text-align: center;
