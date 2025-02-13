@@ -1,31 +1,31 @@
-/ Import Swiper and modules
-import Swiper from 'swiper';
-import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
+// / Import Swiper and modules
+// import Swiper from 'swiper';
+// import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
-// Now you can use Swiper
-const swiperProlects = new Swiper('.swiper', {
-  // Install modules
-  modules: [Navigation, Pagination, Scrollbar],
-  speed: 500,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  // ...
-});
-// console.log(Swiper);
+// // Now you can use Swiper
+// const swiperProlects = new Swiper('.swiper', {
+//   // Install modules
+//   modules: [Navigation, Pagination, Scrollbar],
+//   speed: 500,
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
+//   // ...
+// });
+// // console.log(Swiper);
 
 
-const swiper = new Swiper('.swiper-container', {
-    loop: true, // Циклический слайдер (он будет повторяться)
-    slidesPerView: 1, // Количество слайдов на одном экране
-    navigation: {
-      nextEl: '.button-right-proj', // Кнопка "вправо"
-      prevEl: '.button-left-proj',  // Кнопка "влево"
-    },
-    // Дополнительные настройки (например, скорость переключения)
-    speed: 500,  // Скорость переключения слайдов
-  });
+// const swiper = new Swiper('.swiper-container', {
+//     loop: true, // Циклический слайдер (он будет повторяться)
+//     slidesPerView: 1, // Количество слайдов на одном экране
+//     navigation: {
+//       nextEl: '.button-right-proj', // Кнопка "вправо"
+//       prevEl: '.button-left-proj',  // Кнопка "влево"
+//     },
+//     // Дополнительные настройки (например, скорость переключения)
+//     speed: 500,  // Скорость переключения слайдов
+//   });
 
 
 
