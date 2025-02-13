@@ -1,4 +1,8 @@
 import heroimg from '../img/imgJPEG/aboutMe/heroImg.jpg';
+import pathArrow from '../img/imgSVG/sprite.svg';
+
+import Swiper from 'swiper';
+import 'swiper/css';
 
 document.addEventListener('DOMContentLoaded', () => {
   const aboutMeArray = [
@@ -53,8 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
       title.innerText = item.title;
 
       const button = document.createElement('button');
-      button.innerHTML = `<svg width='40px' height='40px'><use href='../img/imgSVG/sprite.svg#arrowUp'></use></svg>;
-`;
+      button.innerHTML = `<svg width='40px' height='40px'><use href='${pathArrow}#arrowUp'></use></svg>`;
+
       const descriptionDiv = document.createElement('div');
       descriptionDiv.classList.add('div-description');
       descriptionDiv.style.display = 'none';
@@ -74,9 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const isActive = card.classList.contains('active');
         arrow.setAttribute(
           'href',
-          isActive
-            ? './img/imgSVG/sprite.svg#arrowUp'
-            : './img/imgSVG/sprite.svg#arrowDown'
+          isActive ? `${pathArrow}#arrowUp` : `${pathArrow}#arrowDown`
         );
         descriptionDiv.style.display = isActive ? 'block' : 'none';
       });
@@ -94,8 +96,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const containerTwo = document.querySelector('.skills-slider-about-me');
 
-  const swiperContainer = document.createElement('div');
-  swiperContainer.classList.add('swiper-about-me');
+  const swipeContainer = document.createElement('div');
+  swipeContainer.classList.add('swipe-about-me');
 
   const skillsArr = [
     'HTML/CSS',
@@ -120,13 +122,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   skillsList.innerHTML = createSkillTemplate(skillsArr);
 
-  swiperContainer.appendChild(skillsList);
+  swipeContainer.appendChild(skillsList);
 
   const nextButton = document.createElement('div');
-  nextButton.classList.add('swiper-button-next-about-me');
-  nextButton.innerHTML = `<svg width='40px' height='40px'><use href='./img/imgSVG/sprite.svg#arrowRight'></use></svg>`;
+  nextButton.classList.add('swipe-button-next-about-me');
+  nextButton.innerHTML = `<svg width='40px' height='40px'><use href='${pathArrow}#arrowRight'></use></svg>`;
 
-  swiperContainer.appendChild(nextButton);
+  swipeContainer.appendChild(nextButton);
 
-  containerTwo.appendChild(swiperContainer);
+  containerTwo.appendChild(swipeContainer);
 });

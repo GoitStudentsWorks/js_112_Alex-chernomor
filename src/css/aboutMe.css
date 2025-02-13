@@ -261,6 +261,7 @@ button {
     line-height: 150%;
     letter-spacing: -0.02em;
     margin-bottom: 20px;
+    color: #fff;
   }
 
   .skills-slider-about-me {
@@ -269,11 +270,11 @@ button {
     position: relative;
     overflow: hidden;
   }
-  .swiper-about-me {
+  .swipe-about-me {
     width: 100%;
     height: 130px;
   }
-  .swiper-button-next-about-me {
+  .swipe-button-next-about-me {
     position: absolute;
     top: 50%;
     right: 0px;
@@ -300,6 +301,7 @@ button {
     align-items: center;
     font-size: 16px;
     letter-spacing: -0.02em;
+    color: #fff;
   }
 }
 
@@ -382,6 +384,7 @@ button {
     line-height: 150%;
     letter-spacing: -0.02em;
     margin-bottom: 20px;
+    color: #fff;
   }
 
   .skills-slider-about-me {
@@ -390,11 +393,11 @@ button {
     position: relative;
     overflow: hidden;
   }
-  .swiper-about-me {
+  .swipe-about-me {
     width: 100%;
     height: 200px;
   }
-  .swiper-button-next-about-me {
+  .swipe-button-next-about-me {
     position: absolute;
     top: 50%;
     right: 0px;
@@ -421,6 +424,7 @@ button {
     align-items: center;
     font-size: 16px;
     letter-spacing: -0.02em;
+    color: #fff;
   }
 }
 
@@ -508,6 +512,7 @@ button {
     line-height: 150%;
     letter-spacing: -0.02em;
     margin-bottom: 32px;
+    color: #fff;
   }
 
   .skills-slider-about-me {
@@ -516,11 +521,11 @@ button {
     position: relative;
     overflow: hidden;
   }
-  .swiper-about-me {
+  .swipe-about-me {
     width: 100%;
     height: 200px;
   }
-  .swiper-button-next-about-me {
+  .swipe-button-next-about-me {
     position: absolute;
     top: 50%;
     right: 0px;
@@ -547,5 +552,6 @@ button {
     align-items: center;
     font-size: 16px;
     letter-spacing: -0.02em;
+    color: #fff;
   }
 }
