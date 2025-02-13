@@ -67,12 +67,9 @@ const createProjectEl = obj =>{
     `
 };
 
+
 const createProjectTemplate = arr => arr.map(el=>createProjectEl(el)).join('');
 
 const addProjctTemplate = template => projectList.insertAdjacentHTML('beforeend', template);
 
-<<<<<<< Updated upstream
 addProjctTemplate(createProjectTemplate(projectsArr));
-=======
-addProjctTemplate(createProjectTemplate(projectsArr));
->>>>>>> Stashed changes
