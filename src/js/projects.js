@@ -36,13 +36,13 @@ const projectsArr = [
         img:'../img/imgJPEG/projectImg/projectImg1.jpg'
     },
     {
-        projectName:'Programming Across Borders: Ideas, Technologies, Innovations',
-        img:'../img/imgJPEG/projectImg/projectImg2.jpg'
-    },
-    {
-        projectName:'Programming Across Borders: Ideas, Technologies, Innovations',
-        img:'../img/imgJPEG/projectImg/projectImg3.jpg'
-    }
+    //     projectName:'Programming Across Borders: Ideas, Technologies, Innovations',
+    //     img:'../img/imgJPEG/projectImg/projectImg2.jpg'
+    // },
+    // {
+    //     projectName:'Programming Across Borders: Ideas, Technologies, Innovations',
+    //     img:'../img/imgJPEG/projectImg/projectImg3.jpg'
+    // }
 ];
 
 const projectList = document.querySelector('.projects-list');
