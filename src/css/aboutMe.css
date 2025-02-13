@@ -35,6 +35,7 @@ button {
     padding-right: 16px;
   }
   .container-about-me {
+    margin-top:64px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,6 +157,7 @@ button {
     padding-right: 16px;
   }
   .container-about-me {
+    margin-top:64px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,6 +280,7 @@ button {
     margin-bottom: 96px;
   }
   .container-about-me {
+    margin-top:64px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,6 +404,7 @@ button {
     margin: 64px auto 96px;
   }
   .container-about-me {
+    margin-top:96px;
     display: flex;
     flex-direction: row;
     align-items: center;
