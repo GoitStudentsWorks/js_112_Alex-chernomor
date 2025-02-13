@@ -52,5 +52,4 @@ const addBenefitsTemplate = () =>
     'beforeend',
     createBenefitsTemplate(benefitsData)
   );
-
-addBenefitsTemplate();
+  addBenefitsTemplate();
