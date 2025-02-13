@@ -38,6 +38,9 @@ const createProjectEl = obj => {
 };
 const createProjectTemplate = arr =>
   arr.map(el => createProjectEl(el)).join('');
+const addProjectTemplate = template =>
+  projectList.insertAdjacentHTML('beforeend', template);
+addProjectTemplate(createProjectTemplate(projectsArr));
 
 const rightButnnProj = document.querySelector('.right-arrow-prjct');
 const leftButnnProj = document.querySelector('.left-arrow-prjct');
