@@ -5,7 +5,7 @@
     padding: 0 !important;
 }
 
-.covers-box.container {
+.covers-box {
     background-image: url('../img/imgJPEG/coversImg/covers-bg@1x.png');
     backdrop-filter: blur(10px);
     overflow: hidden;
@@ -19,29 +19,33 @@
 }
 
 @media (min-resolution: 192dpi) {
-    .covers-box.container {
+    .covers-box {
         background-image: url('../img/imgJPEG/coversImg/covers-bg@2x.png');
     }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
-    .covers-box.container {
+    .covers-box {
         background-image: url('../img/imgJPEG/coversImg/covers-bg@2x.png');
-        max-width: 768px;
+        width: 768px;
         height: 960px;
+    }
+    .covers-box.container {
+        margin: 0 auto;
     }
 }
 
 @media only screen and (min-width: 1440px) {
-    .covers-box.container {
-        background-color: #fff;
+    .covers-box {
+        /* background-color: #fff; */
         width: 1440px;
         height: 960px;
+        margin: auto;
     }
 }
 
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi) {
-    .covers-box.container {
+    .covers-box {
         background-image: url('../img/imgJPEG/coversImg/covers-bg@2x.png');
     }
 }
