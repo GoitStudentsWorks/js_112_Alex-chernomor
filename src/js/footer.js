@@ -1,3 +1,12 @@
+import logoImg from '../img/imgJPEG/logoImg/logoImg-min.jpg';
+import { createImg } from "./header";
+import { addImg } from "./header";
+
+addImg(document.querySelector('.footer-title-fl'), createImg(logoImg,'img-logo'));
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("formfield");
