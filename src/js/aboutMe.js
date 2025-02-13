@@ -1,5 +1,7 @@
+
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
+
 
 const aboutMeArray = [
   {
@@ -48,8 +50,8 @@ function createCards() {
     title.innerText = item.title;
 
     const button = document.createElement('button');
-    button.innerHTML = `<span><svg width='40px' height='40px'><use href='../img/imgSVG/sprite.svg#arrowUp'></use></svg></span>`;
-
+    button.innerHTML = `<buttun><svg width='40px' height='40px'><use href='../img/imgSVG/sprite.svg#arrowUp'></use></svg></buttun>;
+`
     const descriptionDiv = document.createElement('div');
     descriptionDiv.classList.add('div-description');
     descriptionDiv.style.display = 'none';
@@ -70,8 +72,8 @@ function createCards() {
       arrow.setAttribute(
         'href',
         isActive
-          ? '../img/imgSVG/sprite.svg#arrowUp'
-          : '../img/imgSVG/sprite.svg#arrowDown'
+          ? './img/imgSVG/sprite.svg#arrowUp'
+          : './img/imgSVG/sprite.svg#arrowDown'
       );
       descriptionDiv.style.display = isActive ? 'block' : 'none';
     });
@@ -118,8 +120,8 @@ skillsList.innerHTML = createSkillTemplate(skillsArr);
 swiperContainer.appendChild(skillsList);
 
 const nextButton = document.createElement('div');
-nextButton.classList.add('swiper-button-next-about-me');
-nextButton.innerHTML = `<span><svg width='40px' height='40px'><use href='../img/imgSVG/sprite.svg#arrowRight'></use></svg></span>`;
+nextButton.classList.add('swiper-button-next-about-me'); 
+nextButton.innerHTML = `<button class="button"><svg width='40px' height='40px'><use href='./img/imgSVG/sprite.svg#arrowRight'></use></svg></button>`;
 
 swiperContainer.appendChild(nextButton);
 
