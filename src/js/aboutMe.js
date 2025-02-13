@@ -1,3 +1,6 @@
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
 const aboutMeArray = [
   {
     title: 'ABOUT ME',
