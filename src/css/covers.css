@@ -9,8 +9,8 @@
     background-image: url('../img/imgJPEG/coversImg/covers-bg@1x.png');
     backdrop-filter: blur(10px);
     overflow: hidden;
-    /* margin: auto; */
-    width: 375px;
+    margin: auto;
+    max-width: 375px;
     height: 508px;
     background-position: center;
     background-size: cover;
@@ -27,7 +27,7 @@
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
     .covers-box.container {
         background-image: url('../img/imgJPEG/coversImg/covers-bg@2x.png');
-        width: 768px;
+        max-width: 768px;
         height: 960px;
     }
 }
