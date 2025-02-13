@@ -1,3 +1,253 @@
-.about-me{
-    background-color: tomato;
+/* 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.5;
+  background-color: #1c1d20;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.about-me-section {
+  margin: 0 auto;
+  padding-top: 0;
+  background-color: #1c1d20;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+}
+
+.word-functional {
+  color: #ed3b44;
+}
+
+.word-web {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+/* ========= Mobile ========= */
+
+.about-me-covered-div {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
+.container-about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  gap: 16px;
+  margin-bottom: 96px;
+}
+
+.text-about-me {
+  margin-top: 64px;
+  width: 290px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+}
+
+.img-avatar-about-me {
+  border-radius: 24px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-about-me-container {
+  border-radius: 24px;
+  width: 100%;
+  height: 500px;
+  background-color: #3b3b3b;
+}
+.about-me-container {
+  margin: 0 auto;
+  display: flex;
+}
+
+.about-me-list {
+  width: 100%;
+}
+
+.about-me-list :not(:last-child) {
+  margin-bottom: 32px;
+}
+.el-name-about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+.my-description-about-me {
+  display: block;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  margin-bottom: 96px;
+}
+.ul-description-about-me {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  margin-left: auto;
+  margin-right: 68px;
+  margin-bottom: 32px;
+}
+.skills-slider-about-me {
+  position: relative;
+  overflow: hidden;
+}
+.swiper-about-me {
+  width: 100%;
+  height: 130px;
+}
+
+.swiper-button-next-about-me {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.skills-list-about-me {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 55px;
+}
+
+.skills-link-about-me {
+  display: flex;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  justify-content: center;
+}
+
+.skill-p-about-me {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+/* ========= Laptops ========= */
+
+@media screen and (min-width: 768px) {
+  .about-me-covered-div {
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+  .container-about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-about-me-container {
+    height: 700px;
+  }
+
+  .text-about-me {
+    width: 577px;
+    font-size: 38px;
+  }
+
+  .swiper-about-me {
+    height: 200px;
+  }
+
+  .skills-list-about-me {
+    margin-right: 64px;
+  }
+
+  .skills-link-about-me {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* ========= Desktops ========= */
+
+@media screen and (min-width: 1158px) {
+  .about-me-covered-div {
+    margin-top: 96px;
+    margin-bottom: 164px;
+  }
+
+  .img-avatar-about-me {
+    width: auto;
+  }
+
+  .container-about-me {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ul-description-about-me {
+    width: 612px;
+    height: 320px;
+  }
+
+  .skills-list-about-me {
+    margin-right: 72px;
+  }
 }
