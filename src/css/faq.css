@@ -1,0 +1,145 @@
+/* ====== Основные стили ====== */
+.faq {
+  max-width: 1440px;
+  width: 100%;
+/*   height: 640px; */
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1c1d20;
+}
+
+/* Заголовок FAQ */
+.faq-title {
+  text-align: left;
+  margin-left: 0px;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+/* ====== Сетка FAQ (3x2) ====== */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стиль для каждого элемента FAQ */
+.faq-item {
+  background-color: #1c1d20;
+  padding: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.4);
+
+  border-left: none;
+  border-right: none;
+  transition: background-color 0.4s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.faq-item:nth-child(odd) {
+  border-right: 1px solid rgba(250, 250, 250, 0.4);
+}
+
+.faq-item:hover {
+  background-color: #292929;
+}
+
+/* ====== Стиль для вопросов и стрелок ====== */
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 18px;
+  font-size: 1em;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  position: relative;
+  transition: background-color 0.4s ease-in-out, transform 0.3s ease-out;
+}
+
+.faq-toggle {
+  border: 1px solid rgba(250, 250, 250, 0.4);
+  position: relative;
+  min-width: 35px;
+  min-height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #1c1d20;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.faq-toggle:hover {
+  background-color: #555;
+  transform: scale(1.1);
+}
+
+.faq-toggle svg {
+  width: 14px;
+  height: 10px;
+  stroke: #fafafa;
+  stroke-width: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.faq-item.active .faq-toggle svg {
+  transform: rotate(180deg);
+}
+
+/* ====== Ответ ====== */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 0.9em;
+  color: rgba(250, 250, 250, 0.4);
+  opacity: 0;
+  padding-top: 0;
+  transition: max-height 0.8s ease-out, opacity 0.6s ease-out,
+    padding 0.6s ease-out;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 10px;
+}
+
+/* ====== Адаптивность ====== */
+@media (max-width: 1024px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .faq-item:nth-child(odd) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    font-size: 1em;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 374px) {
+  .faq-grid {
+    flex-direction: column;
+  }
+  .faq-item {
+    width: 100%;
+  }
+  .faq-question {
+    font-size: 0.9em;
+    padding: 12px;
+  }
+}

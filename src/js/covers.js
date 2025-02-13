@@ -1,20 +1,31 @@
+import coversImg1 from '../img/imgJPEG/coversImg/coversImg1.jpg';
+import coversImg2 from '../img/imgJPEG/coversImg/coversImg2.jpg';
+import coversImg3 from '../img/imgJPEG/coversImg/coversImg3.jpg';
+import coversImg4 from '../img/imgJPEG/coversImg/coversImg4.jpg';
+import coversImg5 from '../img/imgJPEG/coversImg/coversImg5.jpg';
+import coversImg6 from '../img/imgJPEG/coversImg/coversImg6.jpg';
+import coversImg7 from '../img/imgJPEG/coversImg/coversImg7.jpg';
+import coversImg8 from '../img/imgJPEG/coversImg/coversImg8.jpg';
+import coversImg9 from '../img/imgJPEG/coversImg/coversImg9.jpg';
+import coversImg10 from '../img/imgJPEG/coversImg/coversImg10.jpg';
+
 document.addEventListener('DOMContentLoaded', () => {
   const coversImages = [
-    { src: '../img/imgJPEG/coversImg/coversImg1.jpg', alt: 'PowerPulse' },
-    { src: '../img/imgJPEG/coversImg/coversImg2.jpg', alt: 'MIMINO' },
-    { src: '../img/imgJPEG/coversImg/coversImg3.jpg', alt: 'Ukrainian Art' },
-    { src: '../img/imgJPEG/coversImg/coversImg4.jpg', alt: 'GREEN.HARVEST' },
-    { src: '../img/imgJPEG/coversImg/coversImg5.jpg', alt: 'WALLET' },
-    { src: '../img/imgJPEG/coversImg/coversImg6.jpg', alt: 'chego jewelry' },
-    { src: '../img/imgJPEG/coversImg/coversImg7.jpg', alt: 'energy.flow' },
-    { src: '../img/imgJPEG/coversImg/coversImg8.jpg', alt: 'fruitbox' },
-    { src: '../img/imgJPEG/coversImg/coversImg9.jpg', alt: 'englishexcellence' },
-    { src: '../img/imgJPEG/coversImg/coversImg10.jpg', alt: 'StarlightStudio' }
-  ];
+
+    { src: coversImg1, alt: 'PowerPulse' },
+    { src: coversImg2, alt: 'MIMINO' },
+    { src: coversImg3, alt: 'Ukrainian Art' },
+    { src: coversImg4, alt: 'GREEN.HARVEST' },
+    { src: coversImg5, alt: 'WALLET' },
+    { src: coversImg6, alt: 'chego jewelry' },
+    { src: coversImg7, alt: 'energy.flow' },
+    { src: coversImg8, alt: 'fruitbox' },
+    { src: coversImg9, alt: 'englishexcellence' },
+    { src: coversImg10, alt: 'StarlightStudio' }
+    ];
 
   const rows = [1, 2, 3, 4].map(n => document.getElementById(`row${n}`));
 
-  // Функція для створення елементів coverItem
   function createCoverItem({ src, alt }) {
     const coverItem = document.createElement('li');
     coverItem.className = 'covers-item';
@@ -35,13 +46,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     return coverItem;
   }
-  // Функція для плавного додавання класу visible з затримкою
+  
   function addVisibleClassWithDelay(element, delay = 100) {
     setTimeout(() => {
       element.classList.add('visible');
     }, delay);
   }
-  // Функція для додавання зображень в рядок
+  
   function addImagesToRow(row, images, isOrdered) {
     let usedImages = [];
 
@@ -62,8 +73,9 @@ document.addEventListener('DOMContentLoaded', () => {
         addVisibleClassWithDelay(coverItem);
         usedImages.push(image.src)
       });
-      // Додаємо ще один набір зображень для безперервної прокрутки
+     
       usedImages.forEach(src => {
+        if (usedImages.includes(src)) return;
         const coverItem = row.firstChild.cloneNode(true);
         row.appendChild(coverItem);
         addVisibleClassWithDelay(coverItem);
@@ -85,6 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  
 
   observer.observe(coversSection);
 });
