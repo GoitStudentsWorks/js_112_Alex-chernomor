@@ -35,7 +35,7 @@ const projectsArr = [
         projectName:'Programming Across Borders: Ideas, Technologies, Innovations',
         img:'../img/imgJPEG/projectImg/projectImg1.jpg'
     },
-    {
+    // {
     //     projectName:'Programming Across Borders: Ideas, Technologies, Innovations',
     //     img:'../img/imgJPEG/projectImg/projectImg2.jpg'
     // },
