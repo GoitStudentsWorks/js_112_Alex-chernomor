@@ -1,14 +1,14 @@
-/* ====== Основные стили ====== */
+
 .faq {
-  max-width: 1440px;
+
   width: 100%;
-/*   height: 640px; */
+
   margin: 50px auto;
-  padding: 20px;
+
   background-color: #1c1d20;
 }
 
-/* Заголовок FAQ */
+
 .faq-title {
   text-align: left;
   margin-left: 0px;
@@ -17,18 +17,20 @@
   color: rgba(250, 250, 250, 0.4);
 }
 
-/* ====== Сетка FAQ (3x2) ====== */
+
 .faq-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+ 
   gap: 0px;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
-/* Стиль для каждого элемента FAQ */
+
 .faq-item {
   background-color: #1c1d20;
   padding: 20px;
@@ -42,15 +44,12 @@
   justify-content: space-between;
 }
 
-.faq-item:nth-child(odd) {
-  border-right: 1px solid rgba(250, 250, 250, 0.4);
-}
 
 .faq-item:hover {
   background-color: #292929;
 }
 
-/* ====== Стиль для вопросов и стрелок ====== */
+
 .faq-question {
   width: 100%;
   text-align: left;
@@ -95,7 +94,6 @@
   transform: rotate(180deg);
 }
 
-/* ====== Ответ ====== */
 .faq-answer {
   max-height: 0;
   overflow: hidden;
@@ -113,11 +111,8 @@
   padding-top: 10px;
 }
 
-/* ====== Адаптивность ====== */
 @media (min-width: 375px) {
-    .faq{
-    width:375px;
-  }
+ 
   .faq-grid {
     flex-direction: column;
   }
@@ -131,9 +126,7 @@
 }
 
 @media (min-width: 768px) {
-    .faq{
-    width: 768px
-  }
+  
   .faq-question {
     font-size: 1em;
     padding: 12px;
@@ -141,16 +134,14 @@
 }
 
 @media (min-width: 1440px) {
-  .faq{
-    width: 1440px
-  }
+ 
   .faq-grid {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
   }
-  .faq-item:nth-child(odd) {
-    border-right: none;
+
+    .faq-item:nth-child(odd) {
+    border-right: 1px solid rgba(250, 250, 250, 0.4);
   }
+
 }
-
-
