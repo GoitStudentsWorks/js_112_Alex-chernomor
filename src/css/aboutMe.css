@@ -68,186 +68,367 @@ button {
 
 /* ========= Mobile ========= */
 
-.about-me-covered-div {
-  margin-top: 64px;
-  margin-bottom: 64px;
-}
-
-.container-about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0;
-  gap: 16px;
-  margin-bottom: 96px;
-}
-
-.text-about-me {
-  margin-top: 64px;
-  width: 290px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  text-transform: uppercase;
-  font-size: 24px;
-  line-height: 117%;
-  letter-spacing: -0.03em;
-}
-
-.img-avatar-about-me {
-  border-radius: 24px;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.text-about-me-container {
-  border-radius: 24px;
-  width: 100%;
-  height: 500px;
-  background-color: #3b3b3b;
-}
-.about-me-container {
-  margin: 0 auto;
-  display: flex;
-}
-
-.about-me-list {
-  width: 100%;
-}
-
-.about-me-list :not(:last-child) {
-  margin-bottom: 32px;
-}
-.el-name-about-me {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 8px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.4);
-}
-.my-description-about-me {
-  display: block;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  margin-bottom: 96px;
-}
-.ul-description-about-me {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  margin-left: auto;
-  margin-right: 68px;
-  margin-bottom: 32px;
-}
-.skills-slider-about-me {
-  position: relative;
-  overflow: hidden;
-}
-.swiper-about-me {
-  width: 100%;
-  height: 130px;
-}
-
-.swiper-button-next-about-me {
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%);
-  z-index: 10;
-  cursor: pointer;
-}
-
-.skills-list-about-me {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 55px;
-}
-
-.skills-link-about-me {
-  display: flex;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  border-radius: 50%;
-  width: 130px;
-  height: 130px;
-  text-align: center;
-  justify-content: center;
-}
-
-.skill-p-about-me {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-}
-
-/* ========= Laptops ========= */
-
-@media screen and (min-width: 768px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .about-me-covered-div {
+    width: 100%;
+    max-width: 1376px;
+    margin: 64px auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .container-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .text-about-me {
+    margin-top: 32px;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 117%;
+    letter-spacing: -0.03em;
+  }
+  .img-avatar-about-me {
+    border-radius: 24px;
+    width: 343px;
+    height: 500px;
+    object-fit: cover;
+  }
+  .text-about-me-container {
+    border-radius: 24px;
+    width: 343px;
+    height: 500px;
+    background-color: #3b3b3b;
+  }
+  .about-me-list :not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .about-me-container {
+    max-width: 343px;
+    margin: auto;
+  }
+
+  .about-me-list {
+    height: auto;
+  }
+
+  .my-description-about-me {
+    display: block;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    margin-bottom: 32px;
+  }
+
+  .el-name-about-me {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+  }
+
+  .ul-description-about-me {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .skills-slider-about-me {
+    max-width: 343px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-about-me {
+    width: 100%;
+    height: 130px;
+  }
+  .swiper-button-next-about-me {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+  }
+  .skills-list-about-me {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 55px;
+  }
+  .skills-link-about-me {
+    display: flex;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    text-align: center;
+    justify-content: center;
+  }
+  .skill-p-about-me {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* ========= Tablets ========= */
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .about-me-covered-div {
+    width: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
     margin-top: 64px;
     margin-bottom: 96px;
   }
   .container-about-me {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 64px;
   }
 
   .text-about-me-container {
+    border-radius: 24px;
+    width: 704px;
     height: 700px;
+    background-color: #3b3b3b;
   }
 
   .text-about-me {
+    margin-top: 64px;
     width: 577px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
     font-size: 38px;
+    line-height: 105%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
   }
 
+  .img-avatar-about-me {
+    border-radius: 24px;
+    width: 704px;
+    height: 700px;
+    object-fit: cover;
+  }
+
+  .about-me-container {
+    max-width: 704px;
+    margin: auto;
+  }
+
+  .about-me-list {
+    height: auto;
+    margin-bottom: 64px;
+  }
+
+  .my-description-about-me {
+    display: block;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    margin-bottom: 32px;
+  }
+
+  .el-name-about-me {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+  }
+
+  .ul-description-about-me {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  .skills-slider-about-me {
+    max-width: 704px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
   .swiper-about-me {
+    width: 100%;
     height: 200px;
   }
-
-  .skills-list-about-me {
-    margin-right: 64px;
+  .swiper-button-next-about-me {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
   }
-
+  .skills-list-about-me {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 55px;
+  }
   .skills-link-about-me {
+    display: flex;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50%;
     width: 200px;
     height: 200px;
+    text-align: center;
+    justify-content: center;
+  }
+  .skill-p-about-me {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: -0.02em;
   }
 }
 
 /* ========= Desktops ========= */
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .about-me-covered-div {
-    margin-top: 96px;
-    margin-bottom: 164px;
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 64px auto 96px;
   }
-
-  .img-avatar-about-me {
-    width: auto;
-  }
-
   .container-about-me {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .text-about-me-container {
+    border-radius: 24px;
+    width: 680px;
+    height: 700px;
+    background-color: #3b3b3b;
+  }
+
+  .text-about-me {
+    margin-top: 64px;
+    width: 577px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 105%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .img-avatar-about-me {
+    border-radius: 24px;
+    width: 704px;
+    height: 700px;
+    object-fit: cover;
+  }
+
+  .about-me-container {
+    max-width: 1376px;
+    margin: auto;
+  }
+
+  .about-me-list {
+    height: auto;
+    margin-bottom: 64px;
+  }
+
+  .my-description-about-me {
+    display: block;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    margin-bottom: 32px;
+  }
+
+  .el-name-about-me {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
   }
 
   .ul-description-about-me {
+    display: flex;
+    flex-direction: column;
     width: 612px;
-    height: 320px;
+    height: auto;
+    margin-right: 68px;
+    margin-left: auto;
+    gap: 16px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    margin-bottom: 32px;
   }
 
+  .skills-slider-about-me {
+    max-width: 1312px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .swiper-about-me {
+    width: 100%;
+    height: 200px;
+  }
+  .swiper-button-next-about-me {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+  }
   .skills-list-about-me {
-    margin-right: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 55px;
+  }
+  .skills-link-about-me {
+    display: flex;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+  }
+  .skill-p-about-me {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: -0.02em;
   }
 }
